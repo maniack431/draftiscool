@@ -2,7 +2,22 @@
 
 {% block content %}
 <h1 class="title">
-This is a Lineweight test.
+  This is a test run with zola. this is index.html in templates.
 </h1>
-<!--<p>{{ section.description }}</p>-->
-{% endblock %}
+<h5 class="username">
+  @yoyo
+  </h5>
+
+<p class="index"><a href="{{ get_url(path='@/blog/_index.md') }}">Posts edit index.html</a>.</p>
+
+<p class="social"><a href="{{ get_url(path='@/blog/_index.md') }}">Socils edit index.html</a>.</p>
+
+<p class="about"><a href="{{ get_url(path='@/blog/_index.md') }}">About edit index.html</a>.</p>
+
+<p class="text">
+ This is text
+</p>
+
+{% endblock content %}
+
+
