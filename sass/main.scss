@@ -1,0 +1,65 @@
+@use 'assets/fancy';
+
+.inverse {
+ background-color: fancy.$primary-color;
+ color: white;
+ h1{
+     font-family: fancy.$font-stack-head;
+     font-size:1.25rem
+}
+}
+
+.container{
+    max-width: 800px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.section{
+    padding:0rem 0;
+}
+
+
+.topbar{
+   font-family: fancy.$font-stack-head;
+
+    border-bottom: 1px solid #e5e5e5;
+   // position:fixed;
+    //top:0;
+    //left:0;
+ //   z-index:1000;
+
+
+   // margin-top: 300px;
+}
+
+.topbar__inner {
+    font-family: fancy.$font-stack-head;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height:48px;
+    margin:auto;
+    //padding:0 2em;
+   // padding-top:14em;
+}
+
+.logo{
+    font-weight:bold;
+    font-size:1.5rem;
+    align-items:left;
+}
+
+.nav{
+    font-weight:semi-bold;
+    font-size:1rem;
+    alight-items:right;
+    color:gray;
+}
+.body{
+    font-family: fancy.$font-stack-Body;
+}
