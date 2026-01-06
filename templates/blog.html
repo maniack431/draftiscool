@@ -1,9 +1,35 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
+<!--<div class="page-title">
   {{ section.title }}
-</h1>
+</div>-->
+
+
+<header class="projstruct">
+ <div class= "year">
+   <p>YEAR</p>
+ </div>
+ <div class= "project-list">
+   <p>PROJECTS</p>
+ </div>
+</header>
+<div class="liststruct">
+<div class="y2">
+  <p>2027</p>
+  <p>2026</p>
+  <p>2025</p>
+  <p>2024</p>
+  <p>2023</p>
+</div>
+<div class="pro">
+  <p>Module 01</p>
+  <p>Pack 01</p>
+  <p>Humane Enough</p>
+  <p>Piece of Shit</p>
+  <p>Draft</p>
+</div>
+</div>
 <u1>
 {% for page in section.pages %}
 <li> <a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>

@@ -9,13 +9,24 @@
 }
 }
 
+.page-title{
+
+    padding-top: 1em;
+    font-family: fancy.$font-stack-pagehead;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .container{
-    max-width: 800px;
+   # max-width: 1200px;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
     padding-left: 2rem;
     padding-right: 2rem;
+   # border: 1px solid #333;
+
 }
 
 
@@ -27,8 +38,8 @@
 .topbar{
     text-decoration:none;
    font-family: fancy.$font-stack-head;
-
-    border-bottom: 1px solid #e5e5e5;
+   color: blue;
+    border-bottom: 2px solid black
    // position:fixed;
     //top:0;
     //left:0;
@@ -69,6 +80,50 @@
     line-height: 1;
 }
 
+.year{
+    display: flex;
+    padding-right: 6rem;
+    font-weight: bold;
+}
+
+.project-list{
+    display: flex;
+    padding-right: 6rem;
+    font-weight: bold;
+}
+
+.projstruct{
+    max-width: 600px;
+    font-family: fancy.$font-stack-head;
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    height:48px;
+
+    padding: 0.4rem;
+    padding-bottom:0.1rem;
+    padding-top:1rem;
+}
+
+.y2{
+    max-width: 600px;
+    align-items:center;
+    justify-content: left;
+    padding-left: 0.5rem;
+    padding-right: 6rem;
+}
+
+.pro{
+    max-width: 600px;
+    align-items:center;
+    justify-content: left;
+    padding-left: 0.5rem;
+}
+
+.liststruct{
+    display: flex;
+}
+
 .logo{
     font-weight:bold;
     border: 2px solid red;
@@ -101,6 +156,8 @@
 }
 
 .text{
+    font-weight: bold;
+    font-size: 2rem;
     padding-top:10px;
     align-items:center;
     padding:0.4rem;
