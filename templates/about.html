@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!--<div class="page-title">
+  {{ section.title }}
+</div>-->
+<header class="whoo">
+ <div class="WHAT">
+    <p>WHAT</p>
+  </div>
+  <div class="WHO">
+    <p>WHO</p>
+  </div>
+  <div class="HOW">
+    <p>HOW</p>
+  </div>
+</header>
+
+<header class="intro">
+ <div class="per_intro">
+   <p>I am a multidisciplinary design student working across visual communication, product systems, and computational design. My practice is driven by structure, constraints, and process, treating design as an evolving system rather than a fixed outcome.</p>
+   </div>
+    <div class="practice">
+    <p>Visual Communication<p>
+    <p>Product & Furniture Systems</p>
+    <p>Computational / Generative Design</p>
+    <p>Interaction & Web Experiments</p>
+    <p>Research-driven Design</p>
+  </div>
+
+  <div class="interest">
+    <p> I work through grids, ratios, and modular logic to build clarity in both form and function. I am interested in how open-source tools, reproducible workflows, and distributed making can influence the way objects, interfaces, and identities are designed and shared.</p>
+</div>
+</header>
+<u1>
+{% for page in section.pages %}
+<li> <a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+{% endfor %}
+</ul>
+{% endblock content %}
