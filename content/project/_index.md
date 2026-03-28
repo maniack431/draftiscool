@@ -1,6 +1,6 @@
 +++
-title = "List of works"
+title = "PROJECTS"
 sort_by = "date"
-template = "blog.html"
+template = "projects.html"
 page_template = "blog-page.html"
 +++

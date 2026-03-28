@@ -4,34 +4,27 @@
 <!--<div class="page-title">
   {{ section.title }}
 </div>-->
-<div class="whoo">
- <div class="WHAT">
-    <p>WHAT</p>
-  </div>
-  <div class="WHO">
-    <p>WHO</p>
-  </div>
-  <div class="HOW">
-    <p>HOW</p>
-  </div>
+<div class="grid-row about-page">
+    <div class="about-column bio">
+        <h1 class="section-title">WHO AM I?</h1>
+        <p class="bio-text">
+            I’m Sahib Singh, a person exploring structure, systems, and storytelling through objects, visuals, and interactions. My work focuses on making ideas tangible in a way that feels intuitive and considered.
+        </p>
+    </div>
+
+    <div class="about-column contact">
+        <h1 class="section-title">CONTACT?</h1>
+        <div class="contact-links">
+            <a href="https://instagram.com/ghaint_sahib" target="_blank" class="social-link">
+                <i class="fa-brands fa-instagram"></i> @ghaint_sahib
+            </a>
+            <a href="mailto:sahib.s1923@gmail.com" class="social-link">
+                <i class="fa-regular fa-envelope"></i> sahib.s1923@gmail.com
+            </a>
+        </div>
+    </div>
 </div>
 
-<div class="intro">
- <div class="per_intro">
-   <p>I am a multidisciplinary design student working across visual communication, product systems, and computational design. My practice is driven by structure, constraints, and process, treating design as an evolving system rather than a fixed outcome.</p>
-   </div>
-    <div class="practice">
-    <p>Visual Communication</p>
-    <p>Product & Furniture Systems</p>
-    <p>Computational / Generative Design</p>
-    <p>Interaction & Web Experiments</p>
-    <p>Research-driven Design</p>
-  </div>
-
-  <div class="interest">
-    <p> I work through grids, ratios, and modular logic to build clarity in both form and function. I am interested in how open-source tools, reproducible workflows, and distributed making can influence the way objects, interfaces, and identities are designed and shared.</p>
-</div>
-</div>
 <u1>
 {% for page in section.pages %}
 <li> <a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>

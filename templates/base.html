@@ -1,44 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Draft</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <link rel="stylesheet" href="{{ get_url(path='main.css') }}" />
+    </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Draft</title>
+    <header class="topbar">
+        <div class="container topbar__inner">
+            <div class="logo">
+                <a href="{{ get_url(path='') }}" style="text-decoration: none"
+                    >Draft.</a
+                >
+            </div>
 
-  <link rel = "stylesheet" href="{{ get_url(path='main.css') }}">
-</head>
+            <div class="nav">
+                <div class="project">
+                    <a
+                        href="{{ get_url(path='@/project/_index.md') }}"
+                        style="text-decoration: none"
+                        >Projects</a
+                    >
+                </div>
 
-<header class="topbar">
-  <div class="container topbar__inner">
-    <div class="logo">
-      <a href="{{ get_url(path='') }}" style="text-decoration:none">Draft.</a>
-    </div>
+                <div class="about">
+                    <a
+                        href="{{ get_url(path='@/about/_index.md') }}"
+                        style="text-decoration: none"
+                        >About</a
+                    >
+                </div>
 
-    <div class="nav">
-      <div class="project">
-        <a href="{{ get_url(path='@/blog/_index.md') }}" style="text-decoration:none">Projects</a>
-      </div>
+                <!--<div class="contact">
+                    <a
+                        href="{{ get_url(path='@/contact/_index.md') }}"
+                        style="text-decoration: none"
+                        >Contact</a
+                    >
+                </div>-->
+            </div>
+        </div>
+    </header>
 
-      <div class="about">
-        <a href="{{ get_url(path='@/about/_index.md') }}" style="text-decoration:none">About</a>
-      </div>
-
-      <div class="contact">
-        <a href="{{ get_url(path='@/contact/_index.md') }}" style="text-decoration:none">Contact</a>
-      </div>
-    </div>
-  </div>
-
-</header>
-
-
-
-<body>
-  <section class="section">
-    <div class="container">
-      {% block content %} {% endblock content %}
-    </div>
-  </section>
-</body>
-
+    <body>
+        <section class="section">
+            <div class="container">
+                {% block content %} {% endblock content %}
+            </div>
+        </section>
+    </body>
 </html>

@@ -1,10 +1,26 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!--<div class="page-title">
+<div class="page-title">
     {{ section.title }}
-    </div>-->
-<div class="overallStructure">
+    </div>
+
+    <div class="grid-row">
+        <div class="grid-item">
+            <img src="{{ get_url(path='img/ke.jpg') | safe }}" alt="Node">
+            <h3 class="project-title">Module 01</h3>
+        </div>
+
+        <div class="grid-item">
+            <img src="{{ get_url(path='img/Junct.jpg') | safe }}" alt="Node">
+            <h3 class="project-title">Node</h3>
+        </div>
+
+
+    </div>
+    </div>
+
+<!--<div class="overallStructure">
   <div class="overallinnerStructure">
     <header class="projstruct">
       <div class= "year">
@@ -58,11 +74,11 @@
       </div>
     </div>
   </div>
-</div>
+</div>-->
 
-<!-- <u1> -->
-  <!-- {% for page in section.pages %} -->
-  <!-- <li> <a href="{{ page.permalink | safe }}">{{ page.title }}</a></li> -->
-  <!-- {% endfor %} -->
-  <!-- </ul> -->
+<u1>
+  {% for page in section.pages %}
+  <li> <a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  {% endfor %}
+  </ul>
 {% endblock content %}

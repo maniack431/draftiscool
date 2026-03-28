@@ -20,7 +20,7 @@
 }
 
 .container{
-    # max-width: 1200px;
+    max-width: 1500px;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
@@ -219,6 +219,121 @@
     margin-top: 1.4rem;
 
 }
+
+.grid-row {
+  display: grid;
+  max-width: 1500px;
+  margin: 0 auto; /* Centers the whole grid on the page */
+  /* This creates two equal columns that won't break the page */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px; /* Increased gap for a cleaner, designer look */
+  padding: 20px;
+}
+
+.grid-column {
+  display: column;
+  max-width: 1500px;
+  overflow:hidden;
+  /* Creates two columns, each taking up one fraction of the available space */
+  grid-template-columns: 1fr 1fr;
+  /* Optional: Adds space between the grid items */
+  gap: 20px;
+}
+
+
+.grid-item {
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* This forces text to go UNDER the image */
+}
+
+.grid-item img {
+box-sizing: border-box; /* Includes the border in the width calculation */
+  border: 2px solid black;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.social-link i {
+  font-size: 76px;      /* Makes the icon bigger */
+  color: #000;         /* Matches your "DRAFT" branding */
+  transition: 0.3s;    /* Smooth hover effect */
+}
+
+.text-column {
+    border: none;
+    padding: 0;
+    overflow: visible;
+}
+
+.about-page {
+    display: grid;
+    /* Bio takes up 2 parts, Contact takes 1 part */
+    grid-template-columns: 2fr 1fr;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 80px auto; /* Centers the whole section and adds top space */
+    padding: 0 40px;
+}
+
+.section-title {
+    font-size: 1.25 rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+   // border-bottom: 2px solid black; /* Matches your 'DRAFT' border style */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.bio-text {
+    font-size: 1.1rem;
+    line-height: 1.8; /* More breathing room for reading */
+   // color: #333;
+    max-width: 600px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between Insta and Email */
+}
+
+.about-page .about-column {
+    border: none !important;
+    padding: 0;
+}
+
+.social-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Space between icon and text */
+    transition: opacity 0.3s ease;
+}
+
+.social-link:hover {
+    opacity: 0.6;
+}
+
+.social-link i {
+    font-size: 1.2rem;
+}
+
+/* Responsive: Stack them on mobile */
+@media (max-width: 768px) {
+    .about-page {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+
 .WHO{
     # display:flex;
     font-weight: bold;
@@ -244,7 +359,7 @@
 }
 .imageframe{
     max-width: 400px;
-    width: 400px;
+    width: 100%;
     aspect-ratio: 4/3;
     display: flex;
     border: 1px solid black;
@@ -252,11 +367,11 @@
     justify-content: center;
 }
 .imagestuct{
-    max-width: 1000px;
-    gap: 1rem;
-    padding-top: 3rem;
-    display: flex;
-    grid-template-columns: 1px 1px 1px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    width:100%;
+
 }
 .imagestut{
     gap: 1rem;
@@ -274,4 +389,3 @@
     gap: 1rem;
     display: flex;
 }
-
