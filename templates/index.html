@@ -1,9 +1,62 @@
 {% extends "base.html" %} {% block content %}
-<p class="text">There is no final project.</p>
-<!--<p class="text">
-  Draft is a multidisciplinary design practice that operates across objects, visual narratives, and interactive systems.
-</p>-->
-<!--   <p class="text">
-  Research-driven, process-led, and experimental in approach.
-</p>-->
+<div class="home-split">
+    <!-- LEFT: NUMBERS -->
+    <div class="home-left">
+        <div class="text-body-bold">Pack 01</div>
+        <div class="text-body-bold">Module 01</div>
+        <div class="text-body-bold">adJunct</div>
+        <div class="text-body-bold">Humane Enough</div>
+        <div class="text-body-bold">Piece of Shit</div>
+        <div class="text-body-bold">Identity</div>
+        <div class="text-body-bold">Draft.</div>
+    </div>
+
+    <!-- RIGHT: ALPHABETS -->
+    <div class="home-right">
+        <div class="grid-row">
+            <div class="grid-item">
+                <img src="{{ get_url(path='img/ke.jpg') | safe }}" alt="Node" />
+
+            </div>
+            <div class="grid-item">
+                <h3 class="project-title">Module 01</h3>
+                <p class="text-body-bold">An exploration into creating a versatile seating system that responds to varied site geometries. The bench is designed to remain easy to assemble, scalable, and visually coherent across different arrangements. At the same time catering to the manufacturing process of Bisleri.</>
+            </div>
+
+            <div class="grid-item">
+                <img
+                    src="{{ get_url(path='img/Junct.jpg') | safe }}"
+                    alt="Node"
+                />
+
+            </div>
+            <div class="grid-item">
+                <h3 class="project-title">Junction</h3>
+                <p class="text-body-bold">An exploration into creating a versatile seating system that responds to varied site geometries. The bench is designed to remain easy to assemble, scalable, and visually coherent across different arrangements. At the same time catering to the manufacturing process of Bisleri.</>
+            </div>
+            <div class="grid-item">
+                <img src="{{ get_url(path='img/ke.jpg') | safe }}" alt="Node" />
+
+            </div>
+            <div class="grid-item">
+                <h3 class="project-title">Module 01</h3>
+                <p class="text-body-bold">An exploration into creating a versatile seating system that responds to varied site geometries. The bench is designed to remain easy to assemble, scalable, and visually coherent across different arrangements. At the same time catering to the manufacturing process of Bisleri.</>
+            </div>
+
+            <div class="grid-item">
+                <img
+                    src="{{ get_url(path='img/Junct.jpg') | safe }}"
+                    alt="Node"
+                />
+
+            </div>
+            <div class="grid-item">
+                <h3 class="project-title">Junction</h3>
+                <p class="text-body-bold">An exploration into creating a versatile seating system that responds to varied site geometries. The bench is designed to remain easy to assemble, scalable, and visually coherent across different arrangements. At the same time catering to the manufacturing process of Bisleri.</>
+            </div>
+
+
+        </div>
+    </div>
+</div>
 {% endblock content %}
