@@ -39,14 +39,23 @@ html, body {
 }
 
 .home-left {
-  width: 40%;
+  width: 20%;
   padding: 40px;
 }
 
 .home-right {
-  width: 60%;
+  width: 80%;
   padding: 40px;
   overflow-y: auto;
+
+   /* Chrome, Safari */
+   scrollbar-width: none;      /* Firefox */
+   -ms-overflow-style: none;
+
+}
+
+.home-right::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 .item {
@@ -155,6 +164,13 @@ html, body {
 
 }
 
+
+.project-title{
+    max-width: 435px;
+}
+
+
+
 .projstruct{
     margin-bottom:-0.75em;
     max-width: 600px;
@@ -235,6 +251,21 @@ html, body {
     padding-top:10px;
     align-items:center;
     padding:0.4rem;
+    line-height: 1.8; /* More breathing room for reading */
+   // color: #333;
+    max-width: 435px;
+   // text-transform:uppercase;
+}
+
+.text-body{
+    //font-weight: bold;
+    font-size: 1rem;
+    padding-top:10px;
+    align-items:center;
+    padding:0.4rem;
+    line-height: 1.8; /* More breathing room for reading */
+   // color: #333;
+    max-width: 435px;
    // text-transform:uppercase;
 }
 
@@ -318,7 +349,8 @@ html, body {
 
 .grid-item img {
 box-sizing: border-box; /* Includes the border in the width calculation */
-  border: 2px solid black;
+  border: 1px solid black;
+ // border-radius: 12px;
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;

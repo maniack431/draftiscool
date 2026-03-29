@@ -1,7 +1,6 @@
 +++
-title = "List of works"
+title = "WHO?"
 sort_by = "date"
 template = "about.html"
 page_template = "blog-page.html"
 +++
-
