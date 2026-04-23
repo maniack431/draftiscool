@@ -12,10 +12,7 @@ If needed, components can be sourced directly.
 Accuracy determines system performance.
 
 <img src="/img/junction1.png" alt="" style="width: 75%; margin: 1rem auto; display: block;" />
-1. Ensure all holes are precisely aligned, as the system depends on their positional accuracy.
-The following instructions outline the process
-of bringing together planar elements to form theOne piece is constructed first; the second is its mirrored counterpart, achieved through interchange of
-junction. While the sequence describes a typicalidentical elements.
+1. Ensure all the holes are precisely aligned, as the system depends on their positional accuracy. One piece is constructed first; the second is it's mirrored counterpart, achieved through interchange of identical elements. Repeat this to make the vertices.
 
 <img src="/img/junction3.png" alt="" style="width: 75%; margin: 1rem auto; display: block;" />
 2. Follow the marked guide lines to establish correct orientation and reference positions during assembly.
