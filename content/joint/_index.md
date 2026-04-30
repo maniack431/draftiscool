@@ -2,6 +2,25 @@
 template = "joint.html"
 +++
 
+<img src="/img/pilot2.JPG" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+
+
+### INTRODUCTION
+The joint gains meaning only within a system. It does not define outcomes—it enables them. What emerges is open, evolving, and shaped by use.
+
+### SYSTEM OVERVIEW
+The junction connects linear and planar elements across three axes. It allows multiple configurations to emerge. It acts as a mediator, not an object.
+
+### CAPABILITIES
+The system extends in multiple directions through simple elements.
+Spans, enclosures, and frameworks are outcomes, not types.
+Its capability expands with use.
+
+### DOWNLOADS
+Download the <a href="/drawings/Junct.jpg" download>files</a> to fabricate, adapt, and build with the system.<br>
+    1. Scale - <a href="/drawings/Scale - Furniture.dxf" download>Furniture </a><br>
+    2. Scale - <a href="/drawings/Scale - Lamp.dxf" download>Lamp </a>
+
 ## ASSEMBLY
 
 ### JUNCTION

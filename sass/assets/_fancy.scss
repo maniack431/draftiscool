@@ -10,12 +10,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/liberation-sans.min.css");
+
+
 
 $font-stack-head: "DM Sans", sans-serif;
 $primary-color: #333;
 
 $font-stack-Body: "DM Sans", sans-serif;
 $primary-color: #333;
+
+$font-stack-h2: "Liberation Sans", sans-serif;
+$primary-color: #333;
+
 
 $font-stack-pagehead: "DM Sans", sans-serif;
 $primary-color: #333;
@@ -29,10 +36,17 @@ h1 {
     color: $primary-color;
 }
 
+h5 {
+    font-family: $font-stack-Body;
+    font-weight: thin;
+    color: blue($color: #000000);
+}
+
+
 h3 {
     font-family: $font-stack-head;
-    color: $primary-color;
-    margin-top: 3rem;
+    // color: green;
+    padding-top: 2rem;
 }
 h5 {
     font-family: $font-stack-Body;

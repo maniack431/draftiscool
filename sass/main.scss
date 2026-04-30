@@ -332,16 +332,16 @@ html, body {
    // text-transform:uppercase;
 }
 .project-page {
-    margin: 3rem auto;
+    margin: auto;
     overflow: auto;
-    max-width: 800px;
-    padding: 0 2rem;
+    max-width: 768px;
+    padding: 2rem;
 }
 .project-title {
     font-family: fancy.$font-stack-head;
     font-weight: bold;
-    font-size: 2rem;
-    padding: 0.4rem;
+    font-size: 4rem;
+    padding-left:0rem;
     text-transform: uppercase;
     max-width: 435px;
     overflow: auto;
@@ -349,25 +349,37 @@ html, body {
 
 .project-subtitle {
     font-family: fancy.$font-stack-head;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 0.4rem;
+    font-size: 2rem;
+    font-weight: thin;
+    padding-left:0rem;
     margin-bottom: 2rem;
-    #color: #666;
+    #color: #666;  
     max-width: 435px;
-        overflow: auto;
+    overflow: auto;
+    color: blue;
 
 }
 
 .content h3 {
     font-family: fancy.$font-stack-head;
    # margin-top: rem;
-    color: #666;
+    // color: green;
+}
+
+.content h4 {
+    font-family: fancy.$font-stack-head;
+    margin-top: 2rem;
+    // font-size: 1.25rem;
+;
+   
 }
 
 .content h2{
     font-family: fancy.$font-stack-head;
     margin-top : 4rem;
+    color: gray;
+    // font-weight: 100;
+
 }
 
 .about{
@@ -457,6 +469,8 @@ box-sizing: border-box; /* Includes the border in the width calculation */
   object-fit: cover;
   display: block;
 }
+
+
 
 .social-link i {
   font-size: 76px;      /* Makes the icon bigger */
