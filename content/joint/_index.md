@@ -17,7 +17,7 @@ Spans, enclosures, and frameworks are outcomes, not types.
 Its capability expands with use.
 
 ### DOWNLOADS
-Download the <a href="/drawings/Junct.jpg" download>files</a> to fabricate, adapt, and build with the system.<br>
+Download the files to fabricate, adapt, and build with the system. There are two scale which this junction can be used for, so download accordingly<br>
     1. Scale - <a href="/drawings/Scale - Furniture.dxf" download>Furniture </a><br>
     2. Scale - <a href="/drawings/Scale - Lamp.dxf" download>Lamp </a>
 
