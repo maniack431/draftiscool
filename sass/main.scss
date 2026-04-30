@@ -38,27 +38,20 @@ html, body {
   height: auto;
   margin-top: 0px;
   gap: 2rem;
+  overflow-y: auto;
 }
 
 .home-left {
   width: 100%;
   padding: 40px;
   flex: 0 0 100%;
-  overflow-y: auto;
-  
-  /* Chrome, Safari */
-  scrollbar-width: none;      /* Firefox */
-  -ms-overflow-style: none;
-}
-
-.home-left::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  overflow: visible;
 }
 
 .home-right {
   width: 100%;
   padding: 40px;
-  overflow-y: auto;
+  overflow: visible;
   flex: 0 0 100%;
 
    /* Chrome, Safari */
@@ -66,11 +59,34 @@ html, body {
    -ms-overflow-style: none;
 }
 
-/* Tablet and larger screens */
-@media (min-width: 768px) {
+/* Portrait orientation - single column */
+@media (orientation: portrait) {
+  .home-split {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow-y: auto;
+  }
+  
+  .home-left {
+    width: 100%;
+    flex: 0 0 100%;
+    overflow: visible;
+  }
+  
+  .home-right {
+    width: 100%;
+    flex: 0 0 100%;
+    overflow: visible;
+  }
+}
+
+/* Landscape orientation - split layout */
+@media (orientation: landscape) and (min-width: 768px) {
   .home-split {
     height: calc(100vh - 60px);
     flex-wrap: nowrap;
+    overflow-y: visible;
   }
   
   .home-left {
@@ -82,11 +98,12 @@ html, body {
   .home-right {
     width: 70%;
     flex: 0 0 70%;
+    overflow-y: auto;
   }
 }
 
-/* Desktop screens */
-@media (min-width: 1024px) {
+/* Desktop landscape */
+@media (orientation: landscape) and (min-width: 1024px) {
   .home-left {
     width: 25%;
     flex: 0 0 25%;
@@ -97,6 +114,7 @@ html, body {
   .home-right {
     width: calc(75% - 2rem);
     flex: 0 0 calc(75% - 2rem);
+    overflow-y: auto;
   }
 }
 
@@ -144,7 +162,9 @@ html, body {
 
 
 .section{
-    padding:0rem 0;
+    padding: 0rem 0;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
 }
 
 
@@ -152,14 +172,11 @@ html, body {
     text-decoration:none;
     font-family: fancy.$font-stack-head;
     color: blue;
-    border-bottom: 2px solid black
-                   // position:fixed;
-                   //top:0;
-                   //left:0;
-                   //   z-index:1000;
-
-
-                   // margin-top: 300px;
+    border-bottom: 2px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
 }
 
 .topbar a,
@@ -314,22 +331,32 @@ html, body {
     max-width: 435px;
    // text-transform:uppercase;
 }
-
-.joint-title {
+.project-page {
+    margin: 3rem auto;
+    overflow: auto;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+.project-title {
     font-family: fancy.$font-stack-head;
     font-weight: bold;
     font-size: 2rem;
     padding: 0.4rem;
     text-transform: uppercase;
+    max-width: 435px;
+    overflow: auto;
 }
 
-.joint-subtitle {
+.project-subtitle {
     font-family: fancy.$font-stack-head;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 0.4rem;
     margin-bottom: 2rem;
     #color: #666;
+    max-width: 435px;
+        overflow: auto;
+
 }
 
 .content h3 {

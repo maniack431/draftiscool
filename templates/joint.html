@@ -1,28 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="home-split" style="gap: 4rem;">
-    <div class="home-left" style="display: flex; flex-direction: column;">
-        <div class="joint-title" style="margin-bottom: 0.5rem;">JOINT</div>
-        <div class="joint-subtitle" style="margin-bottom: 2rem;">A Case Study on Modular Junction Systems</div>
-        <h3 style="margin-top: 0;">INTRODUCTION</h3>
-        <div class="body">The joint gains meaning only within a system. It does not define outcomes—it enables them. What emerges is open, evolving, and shaped by use.</div>
-        <h3>SYSTEM OVERVIEW</h3>
-        <div class="body">The junction connects linear and planar elements across three axes. It allows multiple configurations to emerge. It acts as a mediator, not an object.
-        </div>
-        <h3>CAPABILITIES</h3>
-        <div class="body">The system extends in multiple directions through simple elements.
+<div class="project-page">
+    <div class="project-title" style="margin-bottom: 0.5rem;">JOINT</div>
+    <div class="project-subtitle" style="margin-bottom: 2rem;">A Case Study on Modular Junction Systems</div>
+    <h3 style="margin-top: 0;">INTRODUCTION</h3>
+    <div class="body">The joint gains meaning only within a system. It does not define outcomes—it enables them. What emerges is open, evolving, and shaped by use.</div>
+    <h3>SYSTEM OVERVIEW</h3>
+    <div class="body">The junction connects linear and planar elements across three axes. It allows multiple configurations to emerge. It acts as a mediator, not an object.
+    </div>
+    <h3>CAPABILITIES</h3>
+    <div class="body">The system extends in multiple directions through simple elements.
 Spans, enclosures, and frameworks are outcomes, not types.
 Its capability expands with use.
-        </div>
-        <h3>DOWNLOADS</h3>
-        <div class="body">Download the <a href="/drawings/Junct.jpg" download>files</a> to fabricate, adapt, and build with the system.
-        </div>
     </div>
-    <div class="home-right">
-        <div class="content" style="max-width: 600px;">
-            {{ section.content | safe }}
-        </div>
+    <h3>DOWNLOADS</h3>
+    <div class="body">Download the <a href="/drawings/Junct.jpg" download>files</a> to fabricate, adapt, and build with the system.
+    </div>
+    <div class="content" style="max-width: 600px;">
+        {{ section.content | safe }}
     </div>
 </div>
 {% endblock content %}
