@@ -34,25 +34,70 @@ html, body {
 
 .home-split {
   display: flex;
-  height: calc(100vh - 60px);
+  flex-wrap: wrap;
+  height: auto;
   margin-top: 0px;
+  gap: 2rem;
 }
 
 .home-left {
-  width: 25%;
+  width: 100%;
   padding: 40px;
- margin-right: 10rem;
+  flex: 0 0 100%;
+  overflow-y: auto;
+  
+  /* Chrome, Safari */
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;
+}
+
+.home-left::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 .home-right {
-  width: 70%;
+  width: 100%;
   padding: 40px;
   overflow-y: auto;
+  flex: 0 0 100%;
 
    /* Chrome, Safari */
    scrollbar-width: none;      /* Firefox */
    -ms-overflow-style: none;
+}
 
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+  .home-split {
+    height: calc(100vh - 60px);
+    flex-wrap: nowrap;
+  }
+  
+  .home-left {
+    width: 30%;
+    flex: 0 0 30%;
+    overflow-y: auto;
+  }
+  
+  .home-right {
+    width: 70%;
+    flex: 0 0 70%;
+  }
+}
+
+/* Desktop screens */
+@media (min-width: 1024px) {
+  .home-left {
+    width: 25%;
+    flex: 0 0 25%;
+    margin-right: 2rem;
+    overflow-y: auto;
+  }
+  
+  .home-right {
+    width: calc(75% - 2rem);
+    flex: 0 0 calc(75% - 2rem);
+  }
 }
 
 .home-right::-webkit-scrollbar {
