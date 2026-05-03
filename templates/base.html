@@ -19,13 +19,13 @@
             </div>
 
             <div class="nav">
-                <!--<div class="project">
+                <div class="project">
                     <a
-                        href="{{ get_url(path='@/project/_index.md') }}"
+                        href="{{ get_url(path='@/_index.md') }}"
                         style="text-decoration: none"
-                        >Projects</a
+                        >Projects </a
                     >
-                </div>-->
+                </div>
 
                 <div class="about">
                     <a
@@ -52,5 +52,98 @@
                 {% block content %} {% endblock content %}
             </div>
         </section>
+
+        <!-- Image Modal -->
+        <div id="imageModal" class="image-modal">
+            <span class="modal-close">&times;</span>
+            <span class="modal-nav modal-prev">&lt;</span>
+            <div class="modal-content">
+                <img id="modalImage" class="modal-image" src="" alt="">
+            </div>
+            <span class="modal-nav modal-next">&gt;</span>
+        </div>
+
+        <script>
+            let currentImageIndex = -1;
+            let images = [];
+
+            // Initialize gallery
+            function initGallery() {
+                images = Array.from(document.querySelectorAll('.gallery-item img'));
+            }
+
+            // Open modal with image
+            function openModal(index) {
+                const modal = document.getElementById('imageModal');
+                const modalImage = document.getElementById('modalImage');
+                
+                if (index >= 0 && index < images.length) {
+                    currentImageIndex = index;
+                    modalImage.src = images[index].src;
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+
+            // Close modal
+            function closeModal() {
+                const modal = document.getElementById('imageModal');
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+                currentImageIndex = -1;
+            }
+
+            // Navigate to next image
+            function nextImage() {
+                if (images.length > 0) {
+                    currentImageIndex = (currentImageIndex + 1) % images.length;
+                    document.getElementById('modalImage').src = images[currentImageIndex].src;
+                }
+            }
+
+            // Navigate to previous image
+            function prevImage() {
+                if (images.length > 0) {
+                    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                    document.getElementById('modalImage').src = images[currentImageIndex].src;
+                }
+            }
+
+            // Event listeners
+            document.addEventListener('DOMContentLoaded', function() {
+                initGallery();
+
+                // Click on gallery images
+                images.forEach((img, index) => {
+                    img.parentElement.addEventListener('click', function() {
+                        openModal(index);
+                    });
+                });
+
+                // Close button
+                document.querySelector('.modal-close').addEventListener('click', closeModal);
+
+                // Navigation buttons
+                document.querySelector('.modal-prev').addEventListener('click', prevImage);
+                document.querySelector('.modal-next').addEventListener('click', nextImage);
+
+                // Close on background click
+                document.getElementById('imageModal').addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        closeModal();
+                    }
+                });
+
+                // Keyboard controls
+                document.addEventListener('keydown', function(e) {
+                    const modal = document.getElementById('imageModal');
+                    if (modal.classList.contains('active')) {
+                        if (e.key === 'ArrowRight') nextImage();
+                        if (e.key === 'ArrowLeft') prevImage();
+                        if (e.key === 'Escape') closeModal();
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
