@@ -3,6 +3,7 @@ template = "joint.html"
 +++
 
 <img src="/img/pilot2.JPG" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="https://draft.is-cool.dev/joint">Joint</a> © 2026 by <a href="https://draft.is-cool.dev/about">Sahib Singh</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 
 
 
@@ -67,7 +68,7 @@ Download the files to fabricate, adapt, and build with the system. There are two
 ### CONCLUSION
 The objects presented in this study are not final products intended for mass replication. They are simply demonstrations of the system's capabilities across different scales and materials. The junction holds no inherent value in isolation; its capacity expands with use, becoming only as functional, useful, and meaningful as the person engaging with it.
 
-#### [Click here](/joint/assembly) for assembly instructions<br>
+#### [Click here](/joint/assembly) for assembly instructions
 
 
 
