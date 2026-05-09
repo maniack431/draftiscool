@@ -246,6 +246,7 @@ body {
 
 .project-title {
   max-width: 435px;
+  font-family: fancy.$font-stack-head-black;
 }
 
 
@@ -355,6 +356,7 @@ body {
   overflow: hidden;
   max-width: 768px;
   padding: 2rem;
+
 }
 
 .project-page-black {
@@ -362,7 +364,9 @@ body {
   overflow: hidden;
   max-width: 768px;
   padding: 2rem;
-  background-color: #333;
+
+  font-family: fancy.$font-stack-head-black;
+
 }
 
 
