@@ -125,6 +125,18 @@ body {
   /* Chrome, Safari */
 }
 
+/* Reduce text size and width on the right side of the page */
+.home-right .project-title {
+  font-size: 2.5rem;
+  max-width: 450px;
+}
+
+.home-right .body {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 450px;
+}
+
 .item {
   margin: 0;
   padding: 8px 0;
@@ -345,6 +357,15 @@ body {
   padding: 2rem;
 }
 
+.project-page-black {
+  margin: auto;
+  overflow: hidden;
+  max-width: 768px;
+  padding: 2rem;
+  background-color: #333;
+}
+
+
 .project-title {
   font-family: fancy.$font-stack-head;
   font-weight: bold;
@@ -358,15 +379,41 @@ body {
 .project-subtitle {
   font-family: fancy.$font-stack-head;
   font-size: 2rem;
-  font-weight: thin;
+  font-weight: 300;
   padding-left: 0rem;
   margin-bottom: 2rem;
-  #color: #666;
+  /* color: #666; */
   max-width: 435px;
   overflow: auto;
   color: blue;
 
 }
+
+
+.project-title-black {
+  font-family: fancy.$font-stack-head-black;
+  font-weight: bold;
+  font-size: 4rem;
+  padding-left: 0rem;
+  text-transform: uppercase;
+  max-width: 435px;
+  overflow: auto;
+}
+
+.project-subtitle-black {
+  font-family: fancy.$font-stack-head-black;
+  font-size: 2rem;
+  font-weight: 300;
+  padding-left: 0rem;
+  margin-bottom: 2rem;
+  /* color: #666; */
+  max-width: 435px;
+  overflow: auto;
+  color: blue;
+
+}
+
+
 
 .content h3 {
   font-family: fancy.$font-stack-head;
@@ -472,12 +519,22 @@ body {
   /* This forces text to go UNDER the image */
 }
 
+/* Adjust layout specifically for the home-right grid to fix spacing */
+.home-right .grid-row {
+  grid-template-columns: 3fr 7fr;
+  gap: 20px;
+}
+
+.home-right .grid-item img {
+  width: 100%;
+}
+
 .grid-item img {
   box-sizing: border-box;
   /* Includes the border in the width calculation */
   border: 1px solid black;
   // border-radius: 12px;
-  width: 100%;
+  width: 75%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;

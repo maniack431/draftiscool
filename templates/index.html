@@ -2,8 +2,10 @@
 <div class="home-split">
     <!-- LEFT: NUMBERS -->
     <div class="home-left">
-        <div class="text-body-bold"><a href="{{ get_url(path='@/joint/_index.md') }}" style="text-decoration: none; color: inherit;">Joint</a></div>
-        <div class="text-body-bold"><del>Humane Enough</del></div>
+        <div class="text-body-bold"><a href="{{ get_url(path='@/joint/_index.md') }}"
+                style="text-decoration: none; color: inherit;">Joint</a></div>
+        <div class="text-body-bold"><a href="{{ get_url(path='@/humane_enough/_index.md') }}"
+                style="text-decoration: none; color: inherit;">Humane Enough</a></div>
         <div class="text-body-bold"><del>Pack 01</del></div>
         <div class="text-body-bold"><del>Module 01</del></div>
         <div class="text-body-bold"><del>Piece of Shit</del></div>
@@ -27,42 +29,29 @@
                 <div class="body">The joint gains meaning only within a system. It does not define outcomes—it enables
                     them. What emerges is open, evolving, and shaped by use.
                 </div>
-                <!-- <div class="grid-item">
-                <img src="{{ get_url(path='img/ke.jpg') | safe }}" alt="Node" />
-
-            </div>
-            <div class="grid-item">
-                <h3 class="project-title">Module 01</h3>
-                <p class="text-body">An exploration into creating a versatile seating system that responds to varied site geometries. The bench is designed to remain easy to assemble, scalable, and visually coherent across different arrangements. At the same time catering to the manufacturing process of Bisleri.</>
-            </div>
-
-            <div class="grid-item">
-                <img
-                    src="{{ get_url(path='img/humaneenough.jpg') | safe }}"
-                    alt="Humane Enough"
-                />
-
-            </div>
-            <div class="grid-item">
-                <h3 class="project-title">Humane Enough - Algorithmic Control and Autophobia</h3>
-                <p class="text-body">An exploration into creating a versatile seating system that responds to varied site geometries. The bench is designed to remain easy to assemble, scalable, and visually coherent across different arrangements. At the same time catering to the manufacturing process of Bisleri.</>
-            </div>
-
-
-            <div class="grid-item">
-                <img
-                    src="{{ get_url(path='img/test.gif') | safe }}"
-                    alt="Humane Enough"
-                />
-
-            </div>
-            <div class="grid-item">
-                <h3 class="project-title">giftest</h3>
-                <p class="text-body">An exploration into creating a versatile seating system that responds to varied site geometries. The bench is designed to remain easy to assemble, scalable, and visually coherent across different arrangements. At the same time catering to the manufacturing process of Bisleri.</>
-            </div> -->
-
-
             </div>
         </div>
+
+
+        <div class="grid-row">
+            <div class="grid-item">
+                <a href="{{ get_url(path='@/humane_enough/_index.md') }}" style="text-decoration: none"><img
+                        src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}" alt="humane_enough" /></a>
+            </div>
+            <div class="grid-item">
+                <a href="{{ get_url(path='@/humane_enough/_index.md') }}" style="text-decoration: none">
+                    <h1 class="project-title">Humane Enough</h1>
+                </a>
+
+
+                <div class="body">Humane Enough is a research-driven narrative exploring the tension between the
+                    uniquely human experience and the encroaching logic of automation. It is a collection of artifacts,
+                    systems, and reflections that question what it means to be human in a world increasingly designed by
+                    algorithms.
+                </div>
+            </div>
+        </div>
+
+
     </div>
     {% endblock content %}
