@@ -36,4 +36,4 @@ Black Mirror - Joan is Awful | Adolesence
 
 ## root@algorithm~$ grep "experience video"
 
-<iframe width="100%" height="600" src="https://www.youtube.com/embed/U1pt7h0tNjs?si=AyjezjJWPNa5lov-&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br><br><br><br><br><br><br><br>
+<iframe width="100%" height="600" src="https://www.youtube.com/embed/U1pt7h0tNjs?si=aRXEdJkzvSHOw5kZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
