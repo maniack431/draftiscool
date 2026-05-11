@@ -334,6 +334,7 @@ body {
   line-height: 1.8;
   /* More breathing room for reading */
   // color: #333;
+  font-family: fancy.$font-stack-head-black;
   max-width: 435px;
   // text-transform:uppercase;
 }
@@ -373,8 +374,8 @@ body {
 .project-title {
   font-family: fancy.$font-stack-head;
   font-weight: bold;
-  font-size: 4rem;
-  padding-left: 0rem;
+  font-size: 3rem;
+  padding: 0rem;
   text-transform: uppercase;
   max-width: 435px;
   overflow: auto;
@@ -396,7 +397,7 @@ body {
 
 .project-title-black {
   font-family: fancy.$font-stack-head-black;
-  font-weight: bold;
+  font-weight: Bold;
   font-size: 4rem;
   padding-left: 0rem;
   text-transform: uppercase;
@@ -588,6 +589,8 @@ body {
   /* More breathing room for reading */
   // color: #333;
   max-width: 600px;
+
+  font-family: fancy.$font-stack-Body-black
 }
 
 .contact-links {

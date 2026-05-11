@@ -1,33 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!--<div class="page-title">
-  {{ section.title }}
-</div>-->
-<div class="grid-row about-page">
-    <div class="about-column bio">
-        <h1 class="section-title">WHO AM I?</h1>
-        <p class="bio-text">
-            I’m Sahib Singh, a person exploring structure, systems, and storytelling through objects, visuals, and interactions. My work focuses on making ideas tangible in a way that feels intuitive and considered.
-        </p>
-    </div>
+<div class="project-page-black">
+    <div class="project-subtitle-black" style="color: #333 !important; font-weight: 700;">Who Am I?</div>
 
-    <div class="about-column contact">
-        <h1 class="section-title">CONTACT?</h1>
-        <div class="contact-links">
-            <a href="https://instagram.com/ghaint_sahib" target="_blank" class="social-link">
-                <i class="fa-brands fa-instagram"></i> @ghaint_sahib
-            </a>
-            <a href="mailto:sahib.s1923@gmail.com" class="social-link">
-                <i class="fa-regular fa-envelope"></i> sahib.s1923@gmail.com
-            </a>
-        </div>
+    <div class="content" style="max-width: 768px;">
+        {{ section.content | safe }}
     </div>
 </div>
-
+{% endblock content %}
 <u1>
 {% for page in section.pages %}
 <li> <a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
 {% endfor %}
 </ul>
-{% endblock content %}
