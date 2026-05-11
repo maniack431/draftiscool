@@ -2,7 +2,7 @@
 template = "joint.html"
 +++
 
-<img src="/img/pilot2.JPG" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<img src="/img/joint/pilot2.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
 <a href="https://draft.is-cool.dev/joint">Joint</a> © 2026 by <a href="https://draft.is-cool.dev/about">Sahib Singh</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 
 
@@ -14,12 +14,12 @@ Moving away from restrictive, predefined flat-pack structures, this system estab
 ### CONCEPT
 Contemporary spatial design often falls into two categories: expensive pre-assembled objects or rigid flat-pack systems that dictate a singular, unchangeable final form. This project proposes a third path: an open-source hardware ecosystem that provides the structural logic but leaves the final outcome entirely to the user.
 
-<img src="/img/joint/03_The_Full_System.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<img src="/img/joint/1-3.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
 
 ### HARDWARE
 At the core of this system is a universal three-axis junction. Manufactured from planar metal pieces that are later interlocked, the bracket features a specific geometric hole pattern designed to seamlessly grip both linear members (such as square timber, round dowels, or PVC pipe) and planar members (such as plywood sheets). It relies entirely on standard, accessible fasteners, emphasizing a democratized, highly accessible approach to physical assembly.
 
-<img src="/img/joint/06_Detail_Mid.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<img src="/img/joint/1-6.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
 
 ### SYSTEM CAPABILITIES
 By functioning as a pure point of convergence, the junction enables systems that extend in multiple directions simultaneously. It does not prescribe a singular configuration; rather, it establishes a condition that supports: Spanning Structures, Vertical Assemblies, Enclosed Volumes.
@@ -30,31 +30,31 @@ To prove the system’s true flexibility, the hardware was then applied to other
 
 <div class="image-gallery">
   <div class="gallery-item">
-    <img src="/img/joint/02_The_Interaction.JPG" alt="Image 1">
+    <img src="/img/joint/1-2.jpg" alt="Image 1">
   </div>
   <div class="gallery-item">
-    <img src="/img/joint/03_The_Full_System.jpg" alt="Image 2">
+    <img src="/img/joint/1-3.jpg" alt="Image 2">
   </div>
   <div class="gallery-item">
-    <img src="/img/joint/04_Detail_Top.jpg" alt="Image 3">
+    <img src="/img/joint/1-4.jpg" alt="Image 3">
   </div>
    <div class="gallery-item">
-    <img src="/img/joint/05_Detail_Side.jpg" alt="Image 1">
+    <img src="/img/joint/1-5.jpg" alt="Image 1">
   </div>
   <div class="gallery-item">
-    <img src="/img/joint/06_Detail_Mid.jpg" alt="Image 2">
+    <img src="/img/joint/1-6.jpg" alt="Image 2">
   </div>
   <div class="gallery-item">
-    <img src="/img/joint/07_Dowel_Shelf.JPG" alt="Image 3">
+    <img src="/img/joint/1-7.jpg" alt="Image 3">
   </div>
    <div class="gallery-item">
-    <img src="/img/joint/08_In_Context.JPG" alt="Image 1">
+    <img src="/img/joint/1-8.jpg" alt="Image 1">
   </div>
   <div class="gallery-item">
-    <img src="/img/joint/09_Humans.JPG" alt="Image 2">
+    <img src="/img/joint/1-9.jpg" alt="Image 2">
   </div>
   <div class="gallery-item">
-    <img src="/img/joint/10_System_Bridge.jpg" alt="Image 3">
+    <img src="/img/joint/1-10.jpg" alt="Image 3">
   </div>
   <!-- ... repeat for 9 images total -->
   
