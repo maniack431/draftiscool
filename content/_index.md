@@ -1,8 +1,3 @@
-
 +++
-title = "page"
-##template = "index.html"
+template = "index.html"
 +++
-
-hola zola
-

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{# This manually overrides the check in base.html #}
+{% set_global hide_nav = true %}
+{% block content %}
+<div class = "project-page">
+<main>
+  <h1>ERROR 404</h1>
+  <p>SYSTEM_MESSAGE: The requested path does not exist in the current directory.</p>
+  <pre>
+  ________________________
+ < root@draft: page not found >
+  ------------------------
+         \   ^__^
+          \  (xx)\_______
+             (__)\       )\/\
+              U  ||----w |
+                 ||     ||
+  </pre>
+  <p><a href="/">[ RETURN TO INDEX ]</a></p>
+</main>
+</div>
+{% endblock content %}
