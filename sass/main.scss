@@ -495,11 +495,11 @@ body {
 
 .grid-row {
   display: grid;
-  max-width: 1500px;
+  max-width: 1080px;
   margin: 0 auto;
   /* Centers the whole grid on the page */
-  /* This creates two equal columns that won't break the page */
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* This creates a 3-column grid */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 40px;
   /* Increased gap for a cleaner, designer look */
   padding: 20px;
@@ -507,12 +507,12 @@ body {
 
 .grid-column {
   display: column;
-  max-width: 1500px;
+  max-width: 1532px;
   overflow: hidden;
   /* Creates two columns, each taking up one fraction of the available space */
   grid-template-columns: 1fr 1fr;
   /* Optional: Adds space between the grid items */
-  gap: 20px;
+  gap: 1px;
 }
 
 
@@ -521,25 +521,34 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+
   /* This forces text to go UNDER the image */
 }
 
 /* Adjust layout specifically for the home-right grid to fix spacing */
 .home-right .grid-row {
   grid-template-columns: 3fr 7fr;
-  gap: 20px;
+  gap: 40px;
 }
 
 .home-right .grid-item img {
   width: 100%;
 }
 
+
+.grid-item img {
+  width: 100%;
+}
+
+
 .grid-item img {
   box-sizing: border-box;
   /* Includes the border in the width calculation */
   border: 1px solid black;
+
+  /* Increased drop shadow */
   // border-radius: 12px;
-  width: 75%;
+  width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;

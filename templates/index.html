@@ -1,55 +1,41 @@
 {% extends "base.html" %} {% block content %}
-<div class="home-split">
-    <!-- LEFT: NUMBERS -->
-    <div class="home-left">
-        <div class="text-body-bold"><a href="{{ get_url(path='@/joint/_index.md') }}"
-                style="text-decoration: none; color: inherit;">Joint</a></div>
-        <div class="text-body-bold"><a href="{{ get_url(path='@/humane_enough/_index.md') }}"
-                style="text-decoration: none; color: inherit;">Humane Enough?</a></div>
-        <div class="text-body-bold"><del>Pack 01</del></div>
-        <div class="text-body-bold"><del>Module 01</del></div>
-        <div class="text-body-bold"><del>Piece of Shit</del></div>
-        <div class="text-body-bold"><del>Identity</del></div>
-        <div class="text-body-bold"><del>Draft.</del></div>
+
+<div class="grid-row">
+    <div class="grid-item">
+        <a href="{{ get_url(path='@/humane_enough/_index.md') }}" style="text-decoration: none"><img
+                src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}" alt="humane_enough" /></a>
     </div>
-
-    <!-- RIGHT: ALPHABETS -->
-    <div class="home-right">
-
-        <div class="grid-row">
-            <div class="grid-item">
-                <a href="{{ get_url(path='@/humane_enough/_index.md') }}" style="text-decoration: none"><img
-                        src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}" alt="humane_enough" /></a>
-            </div>
-            <div class="grid-item">
-                <a href="{{ get_url(path='@/humane_enough/_index.md') }}" style="text-decoration: none">
-                    <h1 class="project-title">Humane Enough?</h1>
-                </a>
-
-
-                <div class="body">Humane Enough is a research-driven narrative exploring the tension between the
-                    uniquely human experience and the encroaching logic of automation. It is a collection of artifacts,
-                    systems, and reflections that question what it means to be human in a world increasingly designed by
-                    algorithms.
-                </div>
-            </div>
-        </div>
-        <div class="grid-row">
-            <div class="grid-item">
-                <a href="{{ get_url(path='@/joint/_index.md') }}" style="text-decoration: none"><img
-                        src="{{ get_url(path='img/thumbnail/thumb_joint.jpg') | safe }}" alt="Joint" /></a>
-            </div>
-            <div class="grid-item">
-                <a href="{{ get_url(path='@/joint/_index.md') }}" style="text-decoration: none">
-                    <h1 class="project-title">Joint</h1>
-                </a>
-
-
-                <div class="body">The joint gains meaning only within a system. It does not define outcomes—it enables
-                    them. What emerges is open, evolving, and shaped by use.
-                </div>
-            </div>
-        </div>
-
+    <div class="grid-item">
+        <a href="{{ get_url(path='@/joint/_index.md') }}" style="text-decoration: none"><img
+                src="{{ get_url(path='img/thumbnail/thumb_joint.jpg') | safe }}" alt="Joint" /></a>
     </div>
-    {% endblock content %}
+    <div class="grid-item">
+        <a href="{{ get_url(path='@/module01/_index.md') }}" style="text-decoration: none"><img
+                src="{{ get_url(path='img/thumbnail/module01.jpg') | safe }}" alt="humane_enough" /></a>
+    </div>
+    <!-- <div class="grid-item">
+        <a href="{{ get_url(path='@/joint/_index.md') }}" style="text-decoration: none"><img
+                src="{{ get_url(path='img/thumbnail/thumb_joint.jpg') | safe }}" alt="Joint" /></a>
+    </div>
+    <div class="grid-item">
+        <a href="{{ get_url(path='@/humane_enough/_index.md') }}" style="text-decoration: none"><img
+                src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}" alt="humane_enough" /></a>
+    </div>
+    <div class="grid-item">
+        <a href="{{ get_url(path='@/joint/_index.md') }}" style="text-decoration: none"><img
+                src="{{ get_url(path='img/thumbnail/thumb_joint.jpg') | safe }}" alt="Joint" /></a>
+    </div>
+    <div class="grid-item">
+        <a href="{{ get_url(path='@/humane_enough/_index.md') }}" style="text-decoration: none"><img
+                src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}" alt="humane_enough" /></a>
+    </div>
+    <div class="grid-item">
+        <a href="{{ get_url(path='@/joint/_index.md') }}" style="text-decoration: none"><img
+                src="{{ get_url(path='img/thumbnail/thumb_joint.jpg') | safe }}" alt="Joint" /></a>
+    </div>
+    <div class="grid-item">
+        <a href="{{ get_url(path='@/humane_enough/_index.md') }}" style="text-decoration: none"><img
+                src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}" alt="humane_enough" /></a>
+    </div> -->
+</div>
+{% endblock content %}

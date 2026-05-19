@@ -1,149 +1,138 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Draft</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        />
-       <link rel="stylesheet" href="{{ get_url(path='main.css', cachebust=true) }}" />
-    </head>
 
-    <header class="topbar">
-        <div class="container topbar__inner">
-            <div class="logo">
-                <a href="{{ get_url(path='') }}" style="text-decoration: none"
-                    >Draft.</a
-                >
+<head>
+    <meta charset="utf-8" />
+    <title>Draft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="{{ get_url(path='main.css', cachebust=true) }}" />
+</head>
+
+<header class="topbar">
+    <div class="container topbar__inner">
+        <div class="logo">
+            <a href="{{ get_url(path='') }}" style="text-decoration: none">Draft.</a>
+        </div>
+
+        <div class="nav">
+            <div class="project">
+                <a href="{{ get_url(path='@/project/_index.md') }}" style="text-decoration: none">Projects </a>
             </div>
 
-            <div class="nav">
-                <div class="project">
-                    <a
-                        href="{{ get_url(path='@/_index.md') }}"
-                        style="text-decoration: none"
-                        >Projects </a
-                    >
-                </div>
+            <div class="about">
+                <a href="{{ get_url(path='@/about/_index.md') }}" style="text-decoration: none">About</a>
+            </div>
 
-                <div class="about">
-                    <a
-                        href="{{ get_url(path='@/about/_index.md') }}"
-                        style="text-decoration: none"
-                        >About</a
-                    >
-                </div>
-
-                <!--<div class="contact">
+            <!--<div class="contact">
                     <a
                         href="{{ get_url(path='@/contact/_index.md') }}"
                         style="text-decoration: none"
                         >Contact</a
                     >
                 </div>-->
-            </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <body>
-        <section class="section">
-            <div class="container">
-                {% block content %} {% endblock content %}
-            </div>
-        </section>
-
-        <!-- Image Modal -->
-        <div id="imageModal" class="image-modal">
-            <span class="modal-close">&times;</span>
-            <span class="modal-nav modal-prev">&lt;</span>
-            <div class="modal-content">
-                <img id="modalImage" class="modal-image" src="" alt="">
-            </div>
-            <span class="modal-nav modal-next">&gt;</span>
+<body>
+    <section class="section">
+        <div class="container">
+            {% block content %} {% endblock content %}
         </div>
+    </section>
 
-        <script>
-            let currentImageIndex = -1;
-            let images = [];
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="modal-close">&times;</span>
+        <span class="modal-nav modal-prev">&lt;</span>
+        <div class="modal-content">
+            <img id="modalImage" class="modal-image" src="" alt="">
+        </div>
+        <span class="modal-nav modal-next">&gt;</span>
+    </div>
 
-            // Initialize gallery
-            function initGallery() {
-                images = Array.from(document.querySelectorAll('.gallery-item img'));
+    <script>
+        let currentImageIndex = -1;
+        let images = [];
+
+        // Initialize gallery
+        function initGallery() {
+            images = Array.from(document.querySelectorAll('.gallery-item img'));
+        }
+
+        // Open modal with image
+        function openModal(index) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+
+            if (index >= 0 && index < images.length) {
+                currentImageIndex = index;
+                modalImage.src = images[index].src;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
             }
+        }
 
-            // Open modal with image
-            function openModal(index) {
-                const modal = document.getElementById('imageModal');
-                const modalImage = document.getElementById('modalImage');
-                
-                if (index >= 0 && index < images.length) {
-                    currentImageIndex = index;
-                    modalImage.src = images[index].src;
-                    modal.classList.add('active');
-                    document.body.style.overflow = 'hidden';
-                }
+        // Close modal
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            currentImageIndex = -1;
+        }
+
+        // Navigate to next image
+        function nextImage() {
+            if (images.length > 0) {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                document.getElementById('modalImage').src = images[currentImageIndex].src;
             }
+        }
 
-            // Close modal
-            function closeModal() {
-                const modal = document.getElementById('imageModal');
-                modal.classList.remove('active');
-                document.body.style.overflow = 'auto';
-                currentImageIndex = -1;
+        // Navigate to previous image
+        function prevImage() {
+            if (images.length > 0) {
+                currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                document.getElementById('modalImage').src = images[currentImageIndex].src;
             }
+        }
 
-            // Navigate to next image
-            function nextImage() {
-                if (images.length > 0) {
-                    currentImageIndex = (currentImageIndex + 1) % images.length;
-                    document.getElementById('modalImage').src = images[currentImageIndex].src;
-                }
-            }
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function () {
+            initGallery();
 
-            // Navigate to previous image
-            function prevImage() {
-                if (images.length > 0) {
-                    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-                    document.getElementById('modalImage').src = images[currentImageIndex].src;
-                }
-            }
-
-            // Event listeners
-            document.addEventListener('DOMContentLoaded', function() {
-                initGallery();
-
-                // Click on gallery images
-                images.forEach((img, index) => {
-                    img.parentElement.addEventListener('click', function() {
-                        openModal(index);
-                    });
-                });
-
-                // Close button
-                document.querySelector('.modal-close').addEventListener('click', closeModal);
-
-                // Navigation buttons
-                document.querySelector('.modal-prev').addEventListener('click', prevImage);
-                document.querySelector('.modal-next').addEventListener('click', nextImage);
-
-                // Close on background click
-                document.getElementById('imageModal').addEventListener('click', function(e) {
-                    if (e.target === this) {
-                        closeModal();
-                    }
-                });
-
-                // Keyboard controls
-                document.addEventListener('keydown', function(e) {
-                    const modal = document.getElementById('imageModal');
-                    if (modal.classList.contains('active')) {
-                        if (e.key === 'ArrowRight') nextImage();
-                        if (e.key === 'ArrowLeft') prevImage();
-                        if (e.key === 'Escape') closeModal();
-                    }
+            // Click on gallery images
+            images.forEach((img, index) => {
+                img.parentElement.addEventListener('click', function () {
+                    openModal(index);
                 });
             });
-        </script>
-    </body>
+
+            // Close button
+            document.querySelector('.modal-close').addEventListener('click', closeModal);
+
+            // Navigation buttons
+            document.querySelector('.modal-prev').addEventListener('click', prevImage);
+            document.querySelector('.modal-next').addEventListener('click', nextImage);
+
+            // Close on background click
+            document.getElementById('imageModal').addEventListener('click', function (e) {
+                if (e.target === this) {
+                    closeModal();
+                }
+            });
+
+            // Keyboard controls
+            document.addEventListener('keydown', function (e) {
+                const modal = document.getElementById('imageModal');
+                if (modal.classList.contains('active')) {
+                    if (e.key === 'ArrowRight') nextImage();
+                    if (e.key === 'ArrowLeft') prevImage();
+                    if (e.key === 'Escape') closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+
 </html>

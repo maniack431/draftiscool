@@ -57,7 +57,7 @@ To prove the system’s true flexibility, the hardware was then applied to other
     <img src="/img/joint/1-10.jpg" alt="Image 3">
   </div>
   <!-- ... repeat for 9 images total -->
-  
+
 </div>
 
 ### DOWNLOADS
@@ -69,6 +69,3 @@ Download the files to fabricate, adapt, and build with the system. There are two
 The objects presented in this study are not final products intended for mass replication. They are simply demonstrations of the system's capabilities across different scales and materials. The junction holds no inherent value in isolation; its capacity expands with use, becoming only as functional, useful, and meaningful as the person engaging with it.
 
 #### [Click here](/joint/assembly) for assembly instructions <br><br><br><br><br><br>
-
-
-
