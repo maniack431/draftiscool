@@ -1,5 +1,7 @@
 +++
-template = "humane.html"
+title = "Humane Enough?"
+description = "> Algorithmic Control and Autophobia"
+template = "project-dark.html"
 +++
 
 Language has evolved - from speech to writing to code. Today, algorithms not only carry language but shape how we use it. CAPTCHA, a reverse Turing test, marks entry into a world ruled by surveillance and logic. Here, people mimic machine-readable behavior, seeking uniqueness yet conforming to algorithmic norms. Autophobia - fear of being too different-emerges as systems reward predictability and punish deviation. This project critiques that erosion of agency, visualizing the pressures to conform in digital spaces. It invites viewers to confront how control, fear, and language intersect-revealing a world where being “humane enough” is the price of participation. 

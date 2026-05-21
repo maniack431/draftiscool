@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Source+Code+Pro:wght@400;600;800&display=swap"
+    rel="stylesheet">
+
+<style>
+    /* Terminal Aesthetic Enhancements */
+    html,
+    body,
+    .section {
+        background-color: #050505 !important;
+        color: #e0e0e0 !important;
+        font-family: "Source Code Pro", monospace !important;
+    }
+
+    /* Header override */
+    .topbar {
+        background-color: #050505 !important;
+        border-bottom: 1px solid rgba(0, 255, 0, 0.3) !important;
+        backdrop-filter: none !important;
+    }
+
+    .topbar a,
+    .logo-link,
+    .nav-link {
+        color: #00ff00 !important;
+        font-family: "IBM Plex Mono", monospace !important;
+        text-shadow: 0 0 5px rgba(0, 255, 0, 0.4);
+        transition: none !important;
+        transform: none !important;
+    }
+
+    .topbar a:hover,
+    .logo-link:hover,
+    .nav-link:hover {
+        color: #00ff00 !important;
+        transform: none !important;
+    }
+
+    /* CRT Scanline Overlay */
+    body::after {
+        content: " ";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+        z-index: 2;
+        background-size: 100% 2px, 3px 100%;
+        pointer-events: none;
+    }
+
+    /* Content styling */
+    .project-page {
+        margin: auto;
+        padding-top: 2rem;
+        max-width: 1024px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .terminal-title {
+        color: #00ff00 !important;
+        font-family: "IBM Plex Mono", monospace !important;
+        font-weight: 600;
+        font-size: 3.5rem;
+        text-shadow: 0 0 8px rgba(0, 255, 0, 0.6);
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    .terminal-title::after {
+        content: '_';
+        animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+        50% {
+            opacity: 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .terminal-title {
+            font-size: 2rem !important;
+        }
+    }
+
+    .project-subtitle {
+        color: #888 !important;
+        font-family: "Source Code Pro", monospace !important;
+        font-size: 1.2rem !important;
+        margin-bottom: 3rem !important;
+        margin-top: 0;
+    }
+
+    .content {
+        color: #e0e0e0 !important;
+        font-family: "Source Code Pro", monospace !important;
+        line-height: 1.7 !important;
+        font-size: 1.1rem !important;
+    }
+
+    .content h2 {
+        font-family: "IBM Plex Mono", monospace !important;
+        color: #e2b714 !important;
+        /* Rich yellow */
+        margin-top: 3rem;
+        text-shadow: 0 0 5px rgba(226, 183, 20, 0.4);
+    }
+
+    .content h3 {
+        font-family: "Source Code Pro", monospace !important;
+        color: #00ff00 !important;
+        margin-top: 2rem;
+        text-shadow: 0 0 5px rgba(0, 255, 0, 0.4);
+    }
+
+    .content a {
+        color: #00ff00 !important;
+        text-decoration: underline;
+        text-decoration-style: dashed;
+    }
+
+    .content a:hover {
+        background-color: #00ff00;
+        color: #000 !important;
+        text-decoration: none;
+    }
+</style>
+
+<div class="project-page">
+    {% if page.title %}
+    <h1 class="terminal-title">{{ page.title }}</h1>
+    {% elif section.title %}
+    <h1 class="terminal-title">{{ section.title }}</h1>
+    {% endif %}
+
+    {% if page.description %}
+    <div class="project-subtitle">{{ page.description }}</div>
+    {% elif section.description %}
+    <div class="project-subtitle">{{ section.description }}</div>
+    {% endif %}
+
+    <div class="content">
+        {% if page.content %}
+        {{ page.content | safe }}
+        {% elif section.content %}
+        {{ section.content | safe }}
+        {% endif %}
+    </div>
+</div>
+{% endblock content %}

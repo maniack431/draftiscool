@@ -3,33 +3,39 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Draft</title>
+    <title>{% if page.title %}{{ page.title }} | {% elif section.title %}{{ section.title }} | {% endif %}Draft.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ get_url(path='main.css', cachebust=true) }}" />
+    <script>
+        // Check for saved theme preference or use OS default
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
 </head>
 
 <header class="topbar">
     <div class="container topbar__inner">
-        <div class="logo">
-            <a href="{{ get_url(path='') }}" style="text-decoration: none">Draft.</a>
+        <div class="topbar-left" style="display: flex; align-items: center; gap: 2rem;">
+            <a href="{{ get_url(path='') }}" class="nav-link logo-link">draft.</a>
+            <a href="{{ get_url(path='@/project/_index.md') }}" class="nav-link">Projects</a>
+            <a href="{{ get_url(path='@/about/_index.md') }}" class="nav-link">About</a>
+            <a href="#" id="theme-toggle" class="nav-link" aria-label="Toggle Theme" style="font-size: 1.1rem;"><i class="fas fa-moon"></i></a>
         </div>
 
-        <div class="nav">
-            <div class="project">
-                <a href="{{ get_url(path='@/project/_index.md') }}" style="text-decoration: none">Projects </a>
-            </div>
-
-            <div class="about">
-                <a href="{{ get_url(path='@/about/_index.md') }}" style="text-decoration: none">About</a>
-            </div>
-
-            <!--<div class="contact">
-                    <a
-                        href="{{ get_url(path='@/contact/_index.md') }}"
-                        style="text-decoration: none"
-                        >Contact</a
-                    >
-                </div>-->
+        <div class="topbar-right" style="display: flex; gap: 1.5rem; font-size: 1.2rem; align-items: center;">
+            <a href="https://github.com/maniack431" target="_blank" class="nav-link" aria-label="GitHub"><i
+                    class="fab fa-github"></i></a>
+            <a href="mailto:sahib.s1923@gmail.com" class="nav-link" aria-label="Email"><i
+                    class="fas fa-envelope"></i></a>
+            <a href="https://instagram.com/ghaint_sahib" target="_blank" class="nav-link" aria-label="Instagram"><i
+                    class="fab fa-instagram"></i></a>
         </div>
     </div>
 </header>
@@ -129,6 +135,36 @@
                     if (e.key === 'ArrowRight') nextImage();
                     if (e.key === 'ArrowLeft') prevImage();
                     if (e.key === 'Escape') closeModal();
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.getElementById('theme-toggle');
+            const icon = themeToggle.querySelector('i');
+            
+            // Set initial icon based on current theme
+            if (document.documentElement.getAttribute('data-theme') === 'dark') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            }
+            
+            themeToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                const html = document.documentElement;
+                const isDark = html.getAttribute('data-theme') === 'dark';
+                
+                if (isDark) {
+                    html.removeAttribute('data-theme');
+                    localStorage.setItem('theme', 'light');
+                    icon.classList.remove('fa-sun');
+                    icon.classList.add('fa-moon');
+                } else {
+                    html.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('theme', 'dark');
+                    icon.classList.remove('fa-moon');
+                    icon.classList.add('fa-sun');
                 }
             });
         });

@@ -1,41 +1,36 @@
 {% extends "base.html" %} {% block content %}
 
 <div class="grid-row">
-    <div class="grid-item">
-        <a href="{{ get_url(path='@/humane_enough/_index.md') }}" style="text-decoration: none"><img
-                src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}" alt="humane_enough" /></a>
+    <div class="grid-item project-card">
+        <a href="{{ get_url(path='@/humane_enough/_index.md') }}" class="project-link">
+            <div class="image-wrapper">
+                <img src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}" alt="Humane Enough" />
+            </div>
+            <div class="project-info">
+                <h3 class="card-title">Humane Enough</h3>
+            </div>
+        </a>
     </div>
-    <div class="grid-item">
-        <a href="{{ get_url(path='@/joint/_index.md') }}" style="text-decoration: none"><img
-                src="{{ get_url(path='img/thumbnail/thumb_joint.jpg') | safe }}" alt="Joint" /></a>
+    <div class="grid-item project-card">
+        <a href="{{ get_url(path='@/joint/_index.md') }}" class="project-link">
+            <div class="image-wrapper">
+                <img src="{{ get_url(path='img/thumbnail/thumb_joint.jpg') | safe }}" alt="Joint" />
+            </div>
+            <div class="project-info">
+                <h3 class="card-title">Joint</h3>
+            </div>
+        </a>
     </div>
-    <div class="grid-item">
-        <a href="{{ get_url(path='@/module01/_index.md') }}" style="text-decoration: none"><img
-                src="{{ get_url(path='img/thumbnail/module01.jpg') | safe }}" alt="humane_enough" /></a>
+    <div class="grid-item project-card">
+        <a href="{{ get_url(path='@/module01/_index.md') }}" class="project-link">
+            <div class="image-wrapper">
+                <img src="{{ get_url(path='img/thumbnail/module01.jpg') | safe }}" alt="Module 01" />
+            </div>
+            <div class="project-info">
+                <h3 class="card-title">Module 01</h3>
+            </div>
+        </a>
     </div>
-    <!-- <div class="grid-item">
-        <a href="{{ get_url(path='@/joint/_index.md') }}" style="text-decoration: none"><img
-                src="{{ get_url(path='img/thumbnail/thumb_joint.jpg') | safe }}" alt="Joint" /></a>
-    </div>
-    <div class="grid-item">
-        <a href="{{ get_url(path='@/humane_enough/_index.md') }}" style="text-decoration: none"><img
-                src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}" alt="humane_enough" /></a>
-    </div>
-    <div class="grid-item">
-        <a href="{{ get_url(path='@/joint/_index.md') }}" style="text-decoration: none"><img
-                src="{{ get_url(path='img/thumbnail/thumb_joint.jpg') | safe }}" alt="Joint" /></a>
-    </div>
-    <div class="grid-item">
-        <a href="{{ get_url(path='@/humane_enough/_index.md') }}" style="text-decoration: none"><img
-                src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}" alt="humane_enough" /></a>
-    </div>
-    <div class="grid-item">
-        <a href="{{ get_url(path='@/joint/_index.md') }}" style="text-decoration: none"><img
-                src="{{ get_url(path='img/thumbnail/thumb_joint.jpg') | safe }}" alt="Joint" /></a>
-    </div>
-    <div class="grid-item">
-        <a href="{{ get_url(path='@/humane_enough/_index.md') }}" style="text-decoration: none"><img
-                src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}" alt="humane_enough" /></a>
-    </div> -->
+
 </div>
 {% endblock content %}

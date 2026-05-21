@@ -1,10 +1,10 @@
 +++
-template = "second.html"
+title = "ASSEMBLY INSTRUCTIONS"
+description = "Joint Ecosystem Guide"
+template = "project-light.html"
 +++
 
 #### [Back](/joint/)
-
-## ASSEMBLY
 
 ### JUNCTION
 

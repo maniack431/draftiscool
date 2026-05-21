@@ -3,11 +3,10 @@
     <!-- LEFT: NUMBERS -->
     <div class="home-left">
         <div class="text-body-bold">
-            <a href="{{ get_url(path='@/joint/_index.md') }}" style="text-decoration: none; color: inherit">Joint</a>
+            <a href="{{ get_url(path='@/joint/_index.md') }}" class="nav-link">Joint</a>
         </div>
         <div class="text-body-bold">
-            <a href="{{ get_url(path='@/humane_enough/_index.md') }}"
-                style="text-decoration: none; color: inherit">Humane Enough?</a>
+            <a href="{{ get_url(path='@/humane_enough/_index.md') }}" class="nav-link">Humane Enough?</a>
         </div>
         <div class="text-body-bold"><del>Pack 01</del></div>
         <div class="text-body-bold"><del>Module 01</del></div>
@@ -18,16 +17,18 @@
 
     <!-- RIGHT: ALPHABETS -->
     <div class="home-right">
-        <div class="grid-row">
-            <div class="grid-item">
-                <a href="{{ get_url(path='@/humane_enough/_index.md') }}" style="text-decoration: none"><img
-                        src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}" alt="humane_enough" /></a>
+        <div class="grid-row align-items-center">
+            <div class="grid-item project-card">
+                <a href="{{ get_url(path='@/humane_enough/_index.md') }}" class="project-link">
+                    <div class="image-wrapper">
+                        <img src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}" alt="Humane Enough" />
+                    </div>
+                </a>
             </div>
-            <div class="grid-item">
-                <a href="{{ get_url(path='@/humane_enough/_index.md') }}" style="text-decoration: none">
+            <div class="grid-item text-column">
+                <a href="{{ get_url(path='@/humane_enough/_index.md') }}" class="project-link" style="text-decoration: none;">
                     <h1 class="project-title">Humane Enough?</h1>
                 </a>
-
                 <div class="body">
                     Humane Enough is a research-driven narrative exploring the
                     tension between the uniquely human experience and the
@@ -38,16 +39,18 @@
                 </div>
             </div>
         </div>
-        <div class="grid-row">
-            <div class="grid-item">
-                <a href="{{ get_url(path='@/joint/_index.md') }}" style="text-decoration: none"><img
-                        src="{{ get_url(path='img/thumbnail/thumb_joint.jpg') | safe }}" alt="Joint" /></a>
+        <div class="grid-row align-items-center" style="margin-top: 4rem;">
+            <div class="grid-item project-card">
+                <a href="{{ get_url(path='@/joint/_index.md') }}" class="project-link">
+                    <div class="image-wrapper">
+                        <img src="{{ get_url(path='img/thumbnail/thumb_joint.jpg') | safe }}" alt="Joint" />
+                    </div>
+                </a>
             </div>
-            <div class="grid-item">
-                <a href="{{ get_url(path='@/joint/_index.md') }}" style="text-decoration: none">
+            <div class="grid-item text-column">
+                <a href="{{ get_url(path='@/joint/_index.md') }}" class="project-link" style="text-decoration: none;">
                     <h1 class="project-title">Joint</h1>
                 </a>
-
                 <div class="body">
                     The joint gains meaning only within a system. It does not
                     define outcomes—it enables them. What emerges is open,
@@ -55,16 +58,18 @@
                 </div>
             </div>
         </div>
-        <div class="grid-row">
-            <div class="grid-item">
-                <a href="{{ get_url(path='@/module01/_index.md') }}" style="text-decoration: none"><img
-                        src="{{ get_url(path='img/thumbnail/module01.jpg') | safe }}" alt="Joint" /></a>
+        <div class="grid-row align-items-center" style="margin-top: 4rem;">
+            <div class="grid-item project-card">
+                <a href="{{ get_url(path='@/module01/_index.md') }}" class="project-link">
+                    <div class="image-wrapper">
+                        <img src="{{ get_url(path='img/thumbnail/module01.jpg') | safe }}" alt="Module 01" />
+                    </div>
+                </a>
             </div>
-            <div class="grid-item">
-                <a href="{{ get_url(path='@/module01/_index.md') }}" style="text-decoration: none">
+            <div class="grid-item text-column">
+                <a href="{{ get_url(path='@/module01/_index.md') }}" class="project-link" style="text-decoration: none;">
                     <h1 class="project-title">Module 01</h1>
                 </a>
-
                 <div class="body">
                     Seating system designed for scalability, industrial repeatability, and structural durability.
                     Utilizing recycled multi-layer plastics (MLP), the system functions as standalone seating or
@@ -73,5 +78,5 @@
             </div>
         </div>
     </div>
-    {% endblock content %}
 </div>
+{% endblock content %}

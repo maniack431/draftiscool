@@ -1,0 +1,7 @@
+<div class="image-gallery">
+    {% for img in images %}
+    <div class="gallery-item">
+        <img src="{{ dir ~ img }}" alt="{{ img }}">
+    </div>
+    {% endfor %}
+</div>

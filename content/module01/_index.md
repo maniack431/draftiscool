@@ -1,5 +1,7 @@
 +++
-template = "module01.html"
+title = "MODULE 01"
+description = "An Exploration in Outdoor Furniture"
+template = "project-light.html"
 +++
 <img src="/img/module01/mod01_15.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
 
