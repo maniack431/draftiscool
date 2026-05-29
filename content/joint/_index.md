@@ -73,4 +73,5 @@ Download the files to fabricate, adapt, and build with the system. There are two
 ### CONCLUSION
 The objects presented in this study are not final products intended for mass replication. They are simply demonstrations of the system's capabilities across different scales and materials. The junction holds no inherent value in isolation; its capacity expands with use, becoming only as functional, useful, and meaningful as the person engaging with it.
 
-#### [Click here](/joint/assembly) for assembly instructions. <br><br><br><br><br><br>
+#### [Click here](/joint/assembly) for assembly instructions. 
+#### <a href="https://docs.google.com/presentation/d/1fIn2FZnYRPcQcNF-VKzoyQQptgfdqd_9q-0a84T0Www/edit?usp=sharing">Click here </a>for process document.<br><br><br><br><br><br>

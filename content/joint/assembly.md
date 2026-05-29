@@ -1,5 +1,5 @@
 +++
-title = "ASSEMBLY INSTRUCTIONS"
+title = ""
 description = "Joint Ecosystem Guide"
 template = "project-light.html"
 +++
