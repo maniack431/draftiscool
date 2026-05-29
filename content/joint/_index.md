@@ -1,5 +1,5 @@
 +++
-title = "JOINT"
+title = "Joint"
 description = "An Open Ecosystem for Micro-Architecture"
 template = "project-light.html"
 +++

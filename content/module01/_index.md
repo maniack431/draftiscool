@@ -1,5 +1,5 @@
 +++
-title = "MODULE 01"
+title = "Module 01"
 description = "An Exploration in Outdoor Furniture"
 template = "project-light.html"
 +++
