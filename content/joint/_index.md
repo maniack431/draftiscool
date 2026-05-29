@@ -30,6 +30,9 @@ By functioning as a pure point of convergence, the junction enables systems that
 To test the limits of the system, several distinct instances were prototyped. The high-fidelity models, a robust table and stool, demonstrate the joint’s ability to grip raw timber and plywood, creating flush, stable, and highly functional utilitarian structures. The bright powder-coated hardware creates a stark, utilitarian contrast against the natural wood grain.
 To prove the system’s true flexibility, the hardware was then applied to other materials. An adaptable shelving framework was built utilizing standard round dowels, and a low-fidelity utility shelf was constructed using wooden dowels paired with plywood. Finally, an unpainted, raw-metal iteration of the joint was clamped onto found, untreated pipes to house a light source, creating a brutalist lamp. This final exploration proves that the hardware is not just structural, but capable of defining the atmospheric mood of a space.
 
+#### [Click here](/joint/prototypes) for prototypes images.  <br>
+
+
 <div class="image-gallery">
   <div class="gallery-item">
     <img src="/img/joint/1-2.jpg" alt="Image 1">
@@ -70,4 +73,4 @@ Download the files to fabricate, adapt, and build with the system. There are two
 ### CONCLUSION
 The objects presented in this study are not final products intended for mass replication. They are simply demonstrations of the system's capabilities across different scales and materials. The junction holds no inherent value in isolation; its capacity expands with use, becoming only as functional, useful, and meaningful as the person engaging with it.
 
-#### [Click here](/joint/assembly) for assembly instructions <br><br><br><br><br><br>
+#### [Click here](/joint/assembly) for assembly instructions. <br><br><br><br><br><br>

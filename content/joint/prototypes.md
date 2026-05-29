@@ -1,0 +1,10 @@
++++
+title = ""
+description = "Joint Prototypes"
+template = "project-light.html"
++++
+
+
+#### [Back](/joint/)
+
+{{ gallery(dir="/img/joint/prototypes/", images=["pro_27.jpg", "pro_28.jpg", "pro_29.jpg", "pro_30.jpg", "pro_31.jpg", "pro_32.jpg", "pro_33.jpg", "pro_34.jpg", "pro_35.jpg", "pro_36.jpg", "pro_37.jpg", "pro_38.jpg", "pro_39.jpg", "pro_40.jpg", "pro_41.jpg", "pro_42.jpg", "pro_43.jpg", "pro_44.jpg", "pro_45.jpg", "pro_46.jpg", "pro_47.jpg", "pro_48.jpg", "pro_49.jpg", "pro_50.jpg", "pro_51.jpg", "pro_52.jpg", "pro_53.jpg", "pro_54.jpg", "pro_55.jpg", "pro_56.jpg", "pro_57.jpg", "pro_58.jpg", "pro_59.jpg", "pro_60.jpg", "pro_61.jpg", "pro_62.jpg", "pro_63.jpg", "pro_64.jpg", "pro_65.jpg", "pro_66.jpg", "pro_67.jpg", "pro_68.jpg", "pro_69.jpg", "pro_70.jpg", "pro_71.jpg", "pro_72.jpg", "pro_73.jpg", "pro_74.jpg", "pro_75.jpg", "pro_76.jpg", "pro_77.jpg", "pro_78.jpg", "pro_79.jpg", "pro_80.jpg", "pro_81.jpg", "pro_82.jpg", "pro_83.jpg", "pro_84.jpg", "pro_85.jpg", "pro_86.jpg", "pro_87.jpg", "pro_88.jpg", "pro_89.jpg", "pro_90.jpg", "pro_91.jpg", "pro_92.jpg", "pro_93.jpg", "pro_94.jpg", "pro_95.jpg", "pro_96.jpg", "pro_97.jpg", "pro_98.jpg", "pro_99.jpg", "pro_100.jpg", "pro_101.jpg", "pro_102.jpg", "pro_103.jpg", "pro_104.jpg", "pro_105.jpg", "pro_106.jpg", "pro_107.jpg", "pro_108.jpg", "pro_109.jpg", "pro_110.jpg", "pro_111.jpg", "pro_112.jpg", "pro_113.jpg", "pro_114.jpg", "pro_115.jpg", "pro_116.jpg", "pro_117.jpg", "pro_118.jpg", "pro_119.jpg", "pro_120.jpg", "pro_121.jpg", "pro_122.jpg", "pro_123.jpg", "pro_124.jpg", "pro_125.jpg", "pro_126.jpg", "pro_127.jpg", "pro_128.jpg", "pro_129.jpg", "pro_130.jpg", "pro_131.jpg", "pro_132.jpg", "pro_133.jpg", "pro_134.jpg", "pro_135.jpg", "pro_136.jpg", "pro_137.jpg", "pro_138.jpg", "pro_139.jpg", "pro_140.jpg", "pro_141.jpg", "pro_142.jpg", "pro_143.jpg", "pro_144.jpg", "pro_145.jpg", "pro_146.jpg", "pro_147.jpg", "pro_148.jpg", "pro_149.jpg", "pro_150.jpg", "pro_151.jpg", "pro_152.jpg", "pro_153.jpg", "pro_154.jpg", "pro_155.jpg", "pro_156.jpg", "pro_157.jpg"]) }}
