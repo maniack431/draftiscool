@@ -24,9 +24,10 @@
     <div class="container topbar__inner">
         <div class="topbar-left" style="display: flex; align-items: center; gap: 2rem;">
             <a href="{{ get_url(path='') }}" class="nav-link logo-link">draft.</a>
-            <a href="{{ get_url(path='@/project/_index.md') }}" class="nav-link">Projects</a>
+            <a href="{{ get_url(path='@/work/_index.md') }}" class="nav-link">Work</a>
             <a href="{{ get_url(path='@/about/_index.md') }}" class="nav-link">About</a>
-            <a href="#" id="theme-toggle" class="nav-link" aria-label="Toggle Theme" style="font-size: 1.1rem;"><i class="fas fa-moon"></i></a>
+            <a href="#" id="theme-toggle" class="nav-link" aria-label="Toggle Theme" style="font-size: 1.1rem;"><i
+                    class="fas fa-moon"></i></a>
         </div>
 
         <div class="topbar-right" style="display: flex; gap: 1.5rem; font-size: 1.2rem; align-items: center;">
@@ -143,18 +144,18 @@
         document.addEventListener('DOMContentLoaded', () => {
             const themeToggle = document.getElementById('theme-toggle');
             const icon = themeToggle.querySelector('i');
-            
+
             // Set initial icon based on current theme
             if (document.documentElement.getAttribute('data-theme') === 'dark') {
                 icon.classList.remove('fa-moon');
                 icon.classList.add('fa-sun');
             }
-            
+
             themeToggle.addEventListener('click', (e) => {
                 e.preventDefault();
                 const html = document.documentElement;
                 const isDark = html.getAttribute('data-theme') === 'dark';
-                
+
                 if (isDark) {
                     html.removeAttribute('data-theme');
                     localStorage.setItem('theme', 'light');
