@@ -1,37 +1,87 @@
 {% extends "base.html" %} {% block content %}
 
-<div class="grid-row">
-    <div class="grid-item project-card">
-        <a href="{{ get_url(path='@/joint/_index.md') }}" class="project-link">
-            <div class="image-wrapper">
-                <img src="{{ get_url(path='img/thumbnail/thumb_joint.jpg') | safe }}" alt="Joint" />
-            </div>
-            <div class="project-info">
-                <h3 class="card-title">Joint</h3>
-            </div>
-        </a>
-    </div>
-    <div class="grid-item project-card">
-        <a href="{{ get_url(path='@/humane_enough/_index.md') }}" class="project-link">
-            <div class="image-wrapper">
-                <img src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}" alt="Humane Enough" />
-            </div>
-            <div class="project-info">
-                <h3 class="card-title">Humane Enough</h3>
-            </div>
-        </a>
+<div class="parts-list-container">
+    <div class="parts-header">
+        <span class="part-col col-id">ID</span>
+        <span class="part-col col-date">DATE</span>
+        <span class="part-col col-index">ITEM</span>
+        <span class="part-col col-status">STATUS</span>
     </div>
 
-    <div class="grid-item project-card">
-        <a href="{{ get_url(path='@/module01/_index.md') }}" class="project-link">
-            <div class="image-wrapper">
-                <img src="{{ get_url(path='img/thumbnail/module01.jpg') | safe }}" alt="Module 01" />
-            </div>
-            <div class="project-info">
-                <h3 class="card-title">Module 01</h3>
-            </div>
+    <div class="parts-list">
+        <a href="{{ get_url(path='@/joint/_index.md') }}" class="part-row">
+            <span class="part-col col-id">PRJ-01</span>
+            <span class="part-col col-name">Joint</span>
+            <span class="part-col col-date">01-01-2026</span>
+            <span class="part-col col-status">ONLINE</span>
+            <img class="hover-preview" src="{{ get_url(path='img/thumbnail/thumb_joint.jpg') | safe }}" alt="Joint" />
+        </a>
+
+        <a href="{{ get_url(path='@/humane_enough/_index.md') }}" class="part-row">
+            <span class="part-col col-id">PRJ-02</span>
+            <span class="part-col col-name">Humane Enough</span>
+            <span class="part-col col-date">01-01-2026</span>
+            <span class="part-col col-status">ONLINE</span>
+            <img class="hover-preview" src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}"
+                alt="Humane Enough" />
+        </a>
+
+        <a href="{{ get_url(path='@/module01/_index.md') }}" class="part-row">
+            <span class="part-col col-id">PRJ-03</span>
+            <span class="part-col col-name">Module 01</span>
+            <span class="part-col col-date">01-01-2026</span>
+            <span class="part-col col-status">ONLINE</span>
+            <img class="hover-preview" src="{{ get_url(path='img/thumbnail/module01.jpg') | safe }}" alt="Module 01" />
+        </a>
+
+        <a href="/404.html" class="part-row">
+            <span class="part-col col-id">PRJ-04</span>
+            <span class="part-col col-name">Piece Of The World</span>
+            <span class="part-col col-date">01-01-2026</span>
+            <span class="part-col col-status">MAINTENANCE</span>
+            <!-- <img class="hover-preview" src="{{ get_url(path='img/thumbnail/module01.jpg') | safe }}" alt="Module 01" /> -->
+        </a>
+
+        <a href="/404.html" class="part-row">
+            <span class="part-col col-id">PRJ-05</span>
+            <span class="part-col col-name">Identity</span>
+            <span class="part-col col-date">01-01-2026</span>
+            <span class="part-col col-status">MAINTENANCE</span>
+            <!-- <img class="hover-preview" src="{{ get_url(path='img/thumbnail/module01.jpg') | safe }}" alt="Module 01" /> -->
+        </a>
+
+        <a href="/404.html" class="part-row">
+            <span class="part-col col-id">PRJ-06</span>
+            <span class="part-col col-name">Pack 01</span>
+            <span class="part-col col-date">01-01-2026</span>
+            <span class="part-col col-status">MAINTENANCE</span>
+            <!-- <img class="hover-preview" src="{{ get_url(path='img/thumbnail/module01.jpg') | safe }}" alt="Module 01" /> -->
+        </a>
+
+        <a href="/404.html" class="part-row">
+            <span class="part-col col-id">PRJ-07</span>
+            <span class="part-col col-name">Controlled Serendipity</span>
+            <span class="part-col col-date">01-01-2026</span>
+            <span class="part-col col-status">MAINTENANCE</span>
+            <!-- <img class="hover-preview" src="{{ get_url(path='img/thumbnail/module01.jpg') | safe }}" alt="Module 01" /> -->
+        </a>
+
+        <a href="/404.html" class="part-row">
+            <span class="part-col col-id">PRJ-08</span>
+            <span class="part-col col-name">Brand Subversion</span>
+            <span class="part-col col-date">01-01-2026</span>
+            <span class="part-col col-status">MAINTENANCE</span>
+            <!-- <img class="hover-preview" src="{{ get_url(path='img/thumbnail/module01.jpg') | safe }}" alt="Module 01" /> -->
+        </a>
+
+        <a href="/404.html" class="part-row">
+            <span class="part-col col-id">PRJ-09</span>
+            <span class="part-col col-name">Annie's First Piano Lesson</span>
+            <span class="part-col col-date">01-01-2026</span>
+            <span class="part-col col-status">MAINTENANCE</span>
+            <!-- <img class="hover-preview" src="{{ get_url(path='img/thumbnail/module01.jpg') | safe }}" alt="Module 01" /> -->
         </a>
     </div>
-
 </div>
+
 {% endblock content %}

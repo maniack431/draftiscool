@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ get_url(path='main.css', cachebust=true) }}" />
     <script>
         // Check for saved theme preference or use OS default
@@ -20,6 +20,7 @@
     </script>
 </head>
 
+{% block topbar %}
 <header class="topbar">
     <div class="container topbar__inner">
         <div class="topbar-left" style="display: flex; align-items: center; gap: 2rem;">
@@ -40,6 +41,7 @@
         </div>
     </div>
 </header>
+{% endblock topbar %}
 
 <body>
     <section class="section">

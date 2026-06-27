@@ -1,12 +1,17 @@
 {% extends "base.html" %}
-{# This manually overrides the check in base.html #}
 {% set_global hide_nav = true %}
+{% block topbar %}{% endblock topbar %}
 {% block content %}
-<div class = "project-page">
-<main>
-  <h1>ERROR 404</h1>
-  <p>SYSTEM_MESSAGE: The requested path does not exist in the current directory.</p>
-  <pre>
+<div style="display: flex; justify-content: center; align-items: center; min-height: 100vh; width: 100%; padding: 2rem; box-sizing: border-box;">
+    <div style="border: 2px solid var(--text-primary); padding: 3rem; background-color: var(--bg-color); max-width: 600px; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+        <h1 style="color: var(--accent); margin-top: 0; font-size: 2.5rem; text-transform: uppercase; font-family: var(--font-head); letter-spacing: -0.05em;">SYS.ERR // 404</h1>
+        
+        <div style="font-family: var(--font-sans); text-transform: uppercase; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 2px solid var(--text-primary); font-weight: 700; font-size: 1.1rem; line-height: 1.6;">
+            ITEM_STATUS: <span style="color: var(--accent);">COMPONENT NOT FOUND</span><br/>
+            SYS_MESSAGE: THE REQUESTED PATH DOES NOT EXIST IN THE CURRENT DIRECTORY.
+        </div>
+        
+        <pre style="font-family: var(--font-sans); font-size: 0.9rem; color: var(--text-secondary); line-height: 1.2; margin-bottom: 3rem; font-weight: bold;">
   ________________________
  < root@draft: page not found >
   ------------------------
@@ -15,8 +20,13 @@
              (__)\       )\/\
               U  ||----w |
                  ||     ||
-  </pre>
-  <p><a href="/">[ RETURN TO INDEX ]</a></p>
-</main>
+        </pre>
+
+        <div>
+            <a href="/" style="display: inline-block; padding: 12px 24px; background: var(--text-primary); color: var(--bg-color) !important; text-decoration: none; font-weight: bold; text-transform: uppercase; transition: background 0.2s ease;" onmouseover="this.style.background='var(--accent)'" onmouseout="this.style.background='var(--text-primary)'">
+                [ INITIATE RETURN TO INDEX ]
+            </a>
+        </div>
+    </div>
 </div>
 {% endblock content %}

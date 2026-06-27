@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="parts-list-container" style="margin-top: 4rem;">
+    <!-- 404-style Bordered Box (Stretched Horizontally) -->
+    <div
+        style="border: 2px solid var(--text-primary); padding: 3rem; background-color: var(--bg-color); width: 100%; box-sizing: border-box;">
+
+        <!-- Header -->
+        <h1
+            style="color: var(--accent); margin-top: 0; font-size: 2.5rem; text-transform: uppercase; font-family: var(--font-head); letter-spacing: -0.05em; border-bottom: 2px solid var(--text-primary); padding-bottom: 1rem;">
+            SYS.BIO // WHO AM I?
+        </h1>
+
+        <!-- Parts List Rows Inside -->
+        <div class="parts-list" style="margin-top: 2rem; font-family: var(--font-sans);">
+
+            <div class="parts-header" style="margin-bottom: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                <span class="part-col col-id">ID</span>
+                <span class="part-col col-date">IMG</span>
+                <span class="part-col col-index">PROPERTY</span>
+                <span class="part-col col-status">STATUS</span>
+            </div>
+
+            <!-- ROW 1: NAME (Hover reveals picture) -->
+            <a href="#" class="part-row" style="cursor: default;">
+                <span class="part-col col-id">BIO-01</span>
+                <span class="part-col col-date">-</span>
+                <span class="part-col col-name" style="font-weight: 700;">Sahib Singh</span>
+                <span class="part-col col-status">ACTIVE</span>
+                <!-- <img class="hover-preview" src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}"
+                    alt="Profile Picture" /> -->
+            </a>
+
+            <!-- ROW 2: BIO TEXT -->
+            <div class="part-row"
+                style="align-items: flex-start; cursor: default; border-bottom: 1px solid rgba(128,128,128,0.2); padding-bottom: 2rem;">
+                <span class="part-col col-id">BIO-02</span>
+                <span class="part-col col-date"> -
+                    <!-- <img src="{{ get_url(path='img/thumbnail/humaneenough.jpg') | safe }}" alt="face"
+                        style="padding-right: 2rem; max-width: 100%; height: auto; display: block; filter: grayscale(100%);"> -->
+                </span>
+                <span class="part-col col-name"
+                    style="text-transform: none; font-size: 1.1rem; line-height: 1.6; font-weight: 400; padding-right: 2rem;">
+                    I’m Sahib Singh, a person exploring structure, systems, and storytelling through objects, visuals,
+                    and interactions. My work focuses on making ideas tangible in a way that feels intuitive and
+                    considered.
+                </span>
+                <span class="part-col col-status">READ</span>
+            </div>
+
+            <!-- ROW 3: EMAIL -->
+            <a href="mailto:sahib.s1923@gmail.com" class="part-row">
+                <span class="part-col col-id">BIO-03</span>
+                <span class="part-col col-date">-</span>
+                <span class="part-col col-name" style="font-weight: 700;">Email</span>
+                <span class="part-col col-status">LINK</span>
+            </a>
+
+            <!-- ROW 4: INSTAGRAM -->
+            <a href="https://instagram.com/ghaint_sahib" target="_blank" class="part-row">
+                <span class="part-col col-id">BIO-04</span>
+                <span class="part-col col-date">-</span>
+                <span class="part-col col-name" style="font-weight: 700;">Instagram</span>
+                <span class="part-col col-status">LINK</span>
+            </a>
+
+            <!-- ROW 5: GITHUB -->
+            <a href="https://github.com/maniack431" target="_blank" class="part-row">
+                <span class="part-col col-id">BIO-05</span>
+                <span class="part-col col-date">-</span>
+                <span class="part-col col-name" style="font-weight: 700;">GitHub</span>
+                <span class="part-col col-status">LINK</span>
+            </a>
+
+        </div>
+    </div>
+</div>
+{% endblock content %}
