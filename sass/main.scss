@@ -589,11 +589,13 @@ body {
 
 /* --- MODERN REDESIGN OVERRIDES --- */
 :root {
-  --bg-color: #f4f4f4;
+  // --bg-color: #f4f4f4;
+  --bg-color: #ffffff;
   --text-primary: #111111;
   --text-secondary: #555555;
   --accent: #ff4500;
-  --topbar-bg: rgba(244, 244, 244, 0.95);
+  //--topbar-bg: rgba(244, 244, 244, 0.95);
+  --topbar-bg: rgba(255, 255, 255, 0.95);
   --topbar-border: #111111;
   --link-color: #ff4500;
   --font-sans: 'IBM Plex Mono', monospace;
