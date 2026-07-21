@@ -1,10 +1,12 @@
 @use 'assets/fancy';
 
 html,
+
 body {
   height: 100%;
   margin: 0;
   overflow: hidden;
+  font-size: 16px;
 }
 
 * {
@@ -133,7 +135,7 @@ body {
 }
 
 .container {
-  max-width: 1800px;
+  max-width: 100%;
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
@@ -216,7 +218,7 @@ body {
 .project-page {
   margin: auto;
   overflow: visible;
-  max-width: 1024px;
+  max-width: 1080px;
   padding: 2rem 4rem;
   font-family: fancy.$font-stack-head-black;
 }
@@ -671,7 +673,7 @@ h6,
 .content>h3,
 .content>ul,
 .content>ol {
-  max-width: 1024px;
+  max-width: 1500px;
 }
 
 .content img {
@@ -783,7 +785,7 @@ a.logo-link {
 
 /* --- PARTS LIST LAYOUT --- */
 .parts-list-container {
-  max-width: 1024px;
+  max-width: 100%;
   margin: 4rem auto;
   padding: 0 20px;
 }
@@ -831,7 +833,7 @@ a.logo-link {
   flex: 0 0 250px;
   font-weight: bold;
   font-weight: normal;
-  text-align: right;
+  text-align: center;
 
 }
 
@@ -857,7 +859,7 @@ a.logo-link {
 /* Image Hover Reveal */
 .hover-preview {
   position: absolute;
-  right: 200px;
+  right: 400px;
   top: 50%;
   transform: translateY(-50%);
   width: 250px;
@@ -890,7 +892,7 @@ a.logo-link {
 
 /* --- PARTS LIST LAYOUT --- */
 .parts-list-container {
-  max-width: 1024px;
+  max-width: 100%;
   margin: 4rem auto;
   padding: 0 20px;
 }
