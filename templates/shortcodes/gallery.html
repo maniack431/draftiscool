@@ -1,7 +1,14 @@
-<div class="image-gallery">
-    {% for img in images %}
-    <div class="gallery-item">
-        <img src="{{ dir ~ img }}" alt="{{ img }}">
+<table>
+{% for img in images %}
+{% if loop.index0 % 3 == 0 %}<tr>{% endif %}
+<td>
+  <a href="{{ dir ~ img }}" target="_blank">
+    <div class="crop">
+      <img src="{{ dir ~ img }}" alt="{{ img }}">
     </div>
-    {% endfor %}
-</div>
+  </a>
+</td>
+{% if loop.index % 3 == 0 %}</tr>{% endif %}
+{% endfor %}
+{% if images | length % 3 != 0 %}</tr>{% endif %}
+</table>

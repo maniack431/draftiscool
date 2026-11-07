@@ -1,8 +1,7 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block content %}
 
-{% block content %}
-  <script src="https://gist.github.com/maniack431/0e609f9ea3be7fc6009d4acda49abede.js"></script>
-    <div class="content">
-        {{ section.content | safe }}
-    </div>
+<script src="https://gist.github.com/maniack431/0e609f9ea3be7fc6009d4acda49abede.js"></script>
+
+{{ section.content | safe }}
+
 {% endblock content %}

@@ -4,7 +4,7 @@ description = "A Playful Act Of Building, Discovery, And Interaction."
 template = "project-light.html"
 +++
 
-<img src="/img/playstruct/b1.jpg" alt="Module 01 Hero" style="width: 100%;" />
+<a href="/img/playstruct/b1.jpg" target="_blank"><img width="800" src="/img/playstruct/b1.jpg" alt="Module 01 Hero" /></a>
 
 
 ### INTRODUCTION
@@ -20,16 +20,16 @@ How do we bridge the gap between static utility and dynamic imagination? Our jou
 We realized that furniture doesn't have to be a finished product delivered to a room—it can be a starting point. Somewhere along the line, the breakthrough happened: we shifted our focus from the final object to the act of assembly itself. For a child aged 5–7, the process of putting things together, testing boundaries, and having creative autonomy over their own space is the ultimate form of play.
 
 <br>
-<img src="/img/playstruct/struct_1.jpg" alt="Material Strategy" style="width: 100%;" /><br>
-<img src="/img/playstruct/struct_2.jpg" alt="Material Strategy" style="width: 100%;" />
-<!-- <img src="/img/playstruct/struct_3.jpg" alt="Material Strategy" style="width: 100%;" /> -->
+<a href="/img/playstruct/struct_1.jpg" target="_blank"><img width="800" src="/img/playstruct/struct_1.jpg" alt="Material Strategy" /></a><br>
+<a href="/img/playstruct/struct_2.jpg" target="_blank"><img width="800" src="/img/playstruct/struct_2.jpg" alt="Material Strategy" /></a>
+<!-- <a href="/img/playstruct/struct_3.jpg" target="_blank"><img width="800" src="/img/playstruct/struct_3.jpg" alt="Material Strategy" /></a> -->
 {{ gallery(dir="/img/playstruct/grid/", images=["play_3.jpg", "play_4.jpg", "play_5.jpg"]) }}
 
 
 Assembly is the main event. These four foundational configurations show just how easily the modular components click, lock, and stack together. By following simple, color-coded visual paths, kids can independently tear down and rebuild their furniture to match the day's adventure.
 
-<img src="/img/playstruct/struct_5.jpg" alt="Material Strategy" style="width: 100%;" /><br>
-<img src="/img/playstruct/struct_4.jpg" alt="Material Strategy" style="width: 100%;" />
+<a href="/img/playstruct/struct_5.jpg" target="_blank"><img width="800" src="/img/playstruct/struct_5.jpg" alt="Material Strategy" /></a><br>
+<a href="/img/playstruct/struct_4.jpg" target="_blank"><img width="800" src="/img/playstruct/struct_4.jpg" alt="Material Strategy" /></a>
 
 {{ gallery(dir="/img/playstruct/grid/", images=["play_1.jpg", "play_2.jpg", "play_9.jpg", "play_11.jpg", "play_16.jpg", "play_18.jpg"]) }}
 

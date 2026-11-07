@@ -14,26 +14,26 @@ Language has evolved - from speech to writing to code. Today, algorithms not onl
 
 
 ## root@algorithm~$ grep "images"
-<img src="/img/humane_enough/portfolio25d34.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/humane_enough/portfolio25d34.jpg" target="_blank"><img width="800" src="/img/humane_enough/portfolio25d34.jpg" alt="" /></a>
 
 ## root@algorithm~$ grep "space"
-<img src="/img/humane_enough/space.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/humane_enough/space.jpg" target="_blank"><img width="800" src="/img/humane_enough/space.jpg" alt="" /></a>
 
 ## root@algorithm~$ grep "instruction set"
-<img src="/img/humane_enough/ad33.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/humane_enough/ad33.jpg" target="_blank"><img width="800" src="/img/humane_enough/ad33.jpg" alt="" /></a>
 
 ## root@algorithm~$ grep "interaction flow"
-<img src="/img/humane_enough/flow.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/humane_enough/flow.jpg" target="_blank"><img width="800" src="/img/humane_enough/flow.jpg" alt="" /></a>
 
 
 ## root@algorithm~$ grep "references"
-<img src="/img/humane_enough/mcluhan.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/humane_enough/mcluhan.jpg" target="_blank"><img width="800" src="/img/humane_enough/mcluhan.jpg" alt="" /></a>
 Medium Is The Massage - Marshall McLuhan
-<img src="/img/humane_enough/age.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/humane_enough/age.jpg" target="_blank"><img width="800" src="/img/humane_enough/age.jpg" alt="" /></a>
 The Age Of Earthquakes - Shumon Basar
-<img src="/img/humane_enough/extreme_self.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/humane_enough/extreme_self.jpg" target="_blank"><img width="800" src="/img/humane_enough/extreme_self.jpg" alt="" /></a>
 The Extreme Self - Shumon Basar
-<img src="/img/humane_enough/joan.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/humane_enough/joan.jpg" target="_blank"><img width="800" src="/img/humane_enough/joan.jpg" alt="" /></a>
 Black Mirror - Joan is Awful | Adolesence
 
 <!-- 
@@ -44,26 +44,26 @@ This project examines how algorithmic systems suppress individuality by exploiti
 The resulting interactive experience confronts users with the paradox of perceived digital freedom versus the surrender of personal agency, highlighting how systems that promise uniqueness ultimately reinforce sameness. -->
 
 <!-- ## root@algorithm~$ grep "images"
-<img src="/img/humane_enough/portfolio25d34.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/humane_enough/portfolio25d34.jpg" target="_blank"><img width="800" src="/img/humane_enough/portfolio25d34.jpg" alt="" /></a>
 
 ## root@algorithm~$ grep "space"
-<img src="/img/humane_enough/space.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/humane_enough/space.jpg" target="_blank"><img width="800" src="/img/humane_enough/space.jpg" alt="" /></a>
 
 ## root@algorithm~$ grep "instruction set"
-<img src="/img/humane_enough/ad33.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/humane_enough/ad33.jpg" target="_blank"><img width="800" src="/img/humane_enough/ad33.jpg" alt="" /></a>
 
 ## root@algorithm~$ grep "interaction flow"
-<img src="/img/humane_enough/flow.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/humane_enough/flow.jpg" target="_blank"><img width="800" src="/img/humane_enough/flow.jpg" alt="" /></a>
 
 
 ## root@algorithm~$ grep "references"
-<img src="/img/humane_enough/mcluhan.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/humane_enough/mcluhan.jpg" target="_blank"><img width="800" src="/img/humane_enough/mcluhan.jpg" alt="" /></a>
 Medium Is The Massage - Marshall McLuhan
-<img src="/img/humane_enough/age.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/humane_enough/age.jpg" target="_blank"><img width="800" src="/img/humane_enough/age.jpg" alt="" /></a>
 The Age Of Earthquakes - Shumon Basar
-<img src="/img/humane_enough/extreme_self.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/humane_enough/extreme_self.jpg" target="_blank"><img width="800" src="/img/humane_enough/extreme_self.jpg" alt="" /></a>
 The Extreme Self - Shumon Basar
-<img src="/img/humane_enough/joan.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/humane_enough/joan.jpg" target="_blank"><img width="800" src="/img/humane_enough/joan.jpg" alt="" /></a>
 Black Mirror - Joan is Awful | Adolesence -->
 
 

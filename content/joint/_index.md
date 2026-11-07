@@ -4,8 +4,8 @@ description = "An Open Ecosystem for Micro-Architecture"
 template = "project-light.html"
 +++
 
-<img src="/img/joint/pilot2.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" /> <br> 
-<a href="https://draft.is-cool.dev/joint">Joint</a> © 2026 by <a href="https://draft.is-cool.dev/about">Sahib Singh</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<a href="/img/joint/pilot2.jpg" target="_blank"><img width="800" src="/img/joint/pilot2.jpg" alt="" /></a> <br> 
+<a href="https://draft.is-cool.dev/joint">Joint</a> © 2026 by <a href="https://draft.is-cool.dev/about">Sahib Singh</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><a href="https://mirrors.creativecommons.org/presskit/icons/cc.svg" target="_blank"><img width="20" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC"></a><a href="https://mirrors.creativecommons.org/presskit/icons/by.svg" target="_blank"><img width="20" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY"></a><a href="https://mirrors.creativecommons.org/presskit/icons/nc.svg" target="_blank"><img width="20" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC"></a><a href="https://mirrors.creativecommons.org/presskit/icons/sa.svg" target="_blank"><img width="20" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA"></a>
 
 
 
@@ -16,12 +16,12 @@ Moving away from restrictive, predefined flat-pack structures, this system estab
 ### CONCEPT
 Contemporary spatial design often falls into two categories: expensive pre-assembled objects or rigid flat-pack systems that dictate a singular, unchangeable final form. This project proposes a third path: an open-source hardware ecosystem that provides the structural logic but leaves the final outcome entirely to the user.
 
-<img src="/img/joint/1-3.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/joint/1-3.jpg" target="_blank"><img width="800" src="/img/joint/1-3.jpg" alt="" /></a>
 
 ### HARDWARE
 At the core of this system is a universal three-axis junction. Manufactured from planar metal pieces that are later interlocked, the bracket features a specific geometric hole pattern designed to seamlessly grip both linear members (such as square timber, round dowels, or PVC pipe) and planar members (such as plywood sheets). It relies entirely on standard, accessible fasteners, emphasizing a democratized, highly accessible approach to physical assembly.
 
-<img src="/img/joint/1-6.jpg" alt="" style="width: 100%; margin: 0rem auto; display: flex;" />
+<a href="/img/joint/1-6.jpg" target="_blank"><img width="800" src="/img/joint/1-6.jpg" alt="" /></a>
 
 ### SYSTEM CAPABILITIES
 By functioning as a pure point of convergence, the junction enables systems that extend in multiple directions simultaneously. It does not prescribe a singular configuration; rather, it establishes a condition that supports: Spanning Structures, Vertical Assemblies, Enclosed Volumes.
@@ -32,37 +32,23 @@ To prove the system’s true flexibility, the hardware was then applied to other
 
 
 
-<div class="image-gallery">
-  <div class="gallery-item">
-    <img src="/img/joint/1-2.jpg" alt="Image 1">
-  </div>
-  <div class="gallery-item">
-    <img src="/img/joint/1-3.jpg" alt="Image 2">
-  </div>
-  <div class="gallery-item">
-    <img src="/img/joint/1-4.jpg" alt="Image 3">
-  </div>
-   <div class="gallery-item">
-    <img src="/img/joint/1-5.jpg" alt="Image 1">
-  </div>
-  <div class="gallery-item">
-    <img src="/img/joint/1-6.jpg" alt="Image 2">
-  </div>
-  <div class="gallery-item">
-    <img src="/img/joint/1-7.jpg" alt="Image 3">
-  </div>
-   <div class="gallery-item">
-    <img src="/img/joint/1-8.jpg" alt="Image 1">
-  </div>
-  <div class="gallery-item">
-    <img src="/img/joint/1-9.jpg" alt="Image 2">
-  </div>
-  <div class="gallery-item">
-    <img src="/img/joint/1-10.jpg" alt="Image 3">
-  </div>
-  <!-- ... repeat for 9 images total -->
-
-</div>
+<table>
+<tr>
+  <td><a href="/img/joint/1-2.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/joint/1-2.jpg" alt="Image 1" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+  <td><a href="/img/joint/1-3.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/joint/1-3.jpg" alt="Image 2" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+  <td><a href="/img/joint/1-4.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/joint/1-4.jpg" alt="Image 3" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+</tr>
+<tr>
+  <td><a href="/img/joint/1-5.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/joint/1-5.jpg" alt="Image 4" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+  <td><a href="/img/joint/1-6.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/joint/1-6.jpg" alt="Image 5" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+  <td><a href="/img/joint/1-7.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/joint/1-7.jpg" alt="Image 6" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+</tr>
+<tr>
+  <td><a href="/img/joint/1-8.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/joint/1-8.jpg" alt="Image 7" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+  <td><a href="/img/joint/1-9.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/joint/1-9.jpg" alt="Image 8" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+  <td><a href="/img/joint/1-10.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/joint/1-10.jpg" alt="Image 9" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+</tr>
+</table>
 
 ### INTRODUCTION
 Joint is a three-axis connector designed to democratize structural assembly. Engineered to receive both linear and planar members, it exists as an incomplete entity, a mediator that is only realized when it comes into contact with standard materials like timber, plywood, or pipe.

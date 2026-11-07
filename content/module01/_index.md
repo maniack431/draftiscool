@@ -4,13 +4,13 @@ description = "An Exploration in Outdoor Furniture"
 template = "project-light.html"
 +++
 
-<img src="/img/module01/mod01_15.jpg" alt="Module 01 Hero" style="width: 100%;" />
+<a href="/img/module01/mod01_15.jpg" target="_blank"><img width="800" src="/img/module01/mod01_15.jpg" alt="Module 01 Hero" /></a>
 
 Module 01 is a modular public seating system designed for scalability, industrial repeatability, and structural durability. Utilizing recycled multi-layer plastics (MLP), the system functions as standalone seating or aggregates into extensive, site-specific configurations. The design balances efficient digital fabrication with a refined, utilitarian visual identity.
 
 ## Material Strategy
 
-<img src="/img/module01/mod01_25.jpg" alt="Material Strategy" style="width: 100%;" />
+<a href="/img/module01/mod01_25.jpg" target="_blank"><img width="800" src="/img/module01/mod01_25.jpg" alt="Material Strategy" /></a>
 
 The project leverages recycled MLP sheets, selected for high weather resistance and structural density.
 
@@ -36,35 +36,23 @@ Component profiles are optimized for efficient nested sheet-cutting and industri
 ### Deployment
 The mechanical joinery permits rapid on-site assembly, disassembly, and reconfiguration to meet changing architectural demands.
 
-<div class="image-gallery">
-  <div class="gallery-item">
-    <img src="/img/module01/mod01_5.jpg" alt="Image 1">
-  </div>
-  <div class="gallery-item">
-    <img src="/img/module01/mod01_6.jpg" alt="Image 2">
-  </div>
-  <div class="gallery-item">
-    <img src="/img/module01/mod01_13.jpg" alt="Image 3">
-  </div>
-  <div class="gallery-item">
-    <img src="/img/module01/mod01_8.jpg" alt="Image 4">
-  </div>
-  <div class="gallery-item">
-    <img src="/img/module01/mod01_22.jpg" alt="Image 5">
-  </div>
-  <div class="gallery-item">
-    <img src="/img/module01/mod01_20.jpg" alt="Image 6">
-  </div>
-  <div class="gallery-item">
-    <img src="/img/module01/mod01_16.jpg" alt="Image 7">
-  </div>
-  <div class="gallery-item">
-    <img src="/img/module01/mod01_17.jpg" alt="Image 8">
-  </div>
-  <div class="gallery-item">
-    <img src="/img/module01/mod01_1.jpg" alt="Image 9">
-  </div>
-</div>
+<table>
+<tr>
+  <td><a href="/img/module01/mod01_5.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/module01/mod01_5.jpg" alt="Image 1" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+  <td><a href="/img/module01/mod01_6.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/module01/mod01_6.jpg" alt="Image 2" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+  <td><a href="/img/module01/mod01_13.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/module01/mod01_13.jpg" alt="Image 3" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+</tr>
+<tr>
+  <td><a href="/img/module01/mod01_8.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/module01/mod01_8.jpg" alt="Image 4" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+  <td><a href="/img/module01/mod01_22.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/module01/mod01_22.jpg" alt="Image 5" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+  <td><a href="/img/module01/mod01_20.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/module01/mod01_20.jpg" alt="Image 6" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+</tr>
+<tr>
+  <td><a href="/img/module01/mod01_16.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/module01/mod01_16.jpg" alt="Image 7" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+  <td><a href="/img/module01/mod01_17.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/module01/mod01_17.jpg" alt="Image 8" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+  <td><a href="/img/module01/mod01_1.jpg" target="_blank"><div class="crop" style="overflow:hidden;"><img src="/img/module01/mod01_1.jpg" alt="Image 9" style="width:100%;height:100%;object-fit:cover;"></div></a></td>
+</tr>
+</table>
 
 ## Ergonomics & Geometry
 
