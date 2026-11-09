@@ -6,13 +6,20 @@ template = "project-light.html"
 
 <a href="/img/module01/mod01_15.jpg" target="_blank"><img width="800" src="/img/module01/mod01_15.jpg" alt="Module 01 Hero" /></a>
 
-Module 01 is a modular public seating system designed for scalability, industrial repeatability, and structural durability. Utilizing recycled multi-layer plastics (MLP), the system functions as standalone seating or aggregates into extensive, site-specific configurations. The design balances efficient digital fabrication with a refined, utilitarian visual identity.
+### INTRODUCTION
 
-## Material Strategy
+Module 01 is a modular public seating system designed for scalability, industrial repeatability, and structural durability. Utilizing recycled multi-layer plastics (MLP), the system functions as standalone seating or aggregates into extensive, site-specific configurations.
 
-<a href="/img/module01/mod01_25.jpg" target="_blank"><img width="800" src="/img/module01/mod01_25.jpg" alt="Material Strategy" /></a>
+Rather than optimizing for material reduction, the design prioritizes material addition—utilizing a high-volume, low-value waste stream for heavy-duty architectural applications. Its fabrication parameters are derived from commercially circulating recycled-plastic sheet stocks, aligning the design with existing industrial recycling streams rather than theoretical frameworks.
 
-The project leverages recycled MLP sheets, selected for high weather resistance and structural density.
+
+<!-- Module 01 is a modular public seating system designed for scalability, industrial repeatability, and structural durability. Utilizing recycled multi-layer plastics (MLP), the system functions as standalone seating or aggregates into extensive, site-specific configurations. The design balances efficient digital fabrication with a refined, utilitarian visual identity. -->
+
+<!-- ## Material Strategy -->
+
+<!-- <a href="/img/module01/mod01_25.jpg" target="_blank"><img width="800" src="/img/module01/mod01_25.jpg" alt="Material Strategy" /></a> -->
+
+<!-- The project leverages recycled MLP sheets, selected for high weather resistance and structural density.
 
 ### Material Addition
 Rather than optimizing for material reduction, the design prioritizes material addition—utilizing a high-volume, low-value waste stream for heavy-duty architectural applications.
@@ -34,7 +41,7 @@ These intersect the spine to establish structural rigidity. The frequency and or
 Component profiles are optimized for efficient nested sheet-cutting and industrial extrusion, minimizing material kerf and processing time.
 
 ### Deployment
-The mechanical joinery permits rapid on-site assembly, disassembly, and reconfiguration to meet changing architectural demands.
+The mechanical joinery permits rapid on-site assembly, disassembly, and reconfiguration to meet changing architectural demands. -->
 
 <table>
 <tr>
@@ -54,10 +61,12 @@ The mechanical joinery permits rapid on-site assembly, disassembly, and reconfig
 </tr>
 </table>
 
-## Ergonomics & Geometry
+
+
+<!-- ## Ergonomics & Geometry
 
 ### Anatomical Alignment
 Form profiles are mathematically guided by standard ergonomic thresholds, ensuring public comfort through geometric optimization rather than complex contours.
 
 ### Optimized Yield
-The structural side-profile geometry maximizes yield per standard sheet layout, significantly lowering waste overhead during production.
+The structural side-profile geometry maximizes yield per standard sheet layout, significantly lowering waste overhead during production. -->

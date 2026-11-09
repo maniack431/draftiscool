@@ -20,7 +20,7 @@ How do we bridge the gap between static utility and dynamic imagination? Our jou
 We realized that furniture doesn't have to be a finished product delivered to a room—it can be a starting point. Somewhere along the line, the breakthrough happened: we shifted our focus from the final object to the act of assembly itself. For a child aged 5–7, the process of putting things together, testing boundaries, and having creative autonomy over their own space is the ultimate form of play.
 
 <br>
-<a href="/img/playstruct/struct_1.jpg" target="_blank"><img width="800" src="/img/playstruct/struct_1.jpg" alt="Material Strategy" /></a><br>
+<a href="/img/playstruct/struct_1.jpg" target="_blank"><img width="100%" src="/img/playstruct/struct_1.jpg" alt="Material Strategy" /></a><br>
 <a href="/img/playstruct/struct_2.jpg" target="_blank"><img width="800" src="/img/playstruct/struct_2.jpg" alt="Material Strategy" /></a>
 <!-- <a href="/img/playstruct/struct_3.jpg" target="_blank"><img width="800" src="/img/playstruct/struct_3.jpg" alt="Material Strategy" /></a> -->
 {{ gallery(dir="/img/playstruct/grid/", images=["play_3.jpg", "play_4.jpg", "play_5.jpg"]) }}
