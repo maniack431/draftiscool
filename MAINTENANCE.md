@@ -7,7 +7,7 @@ This site is built using **Zola** (a static site generator) and follows an ultra
 ## 1. Design Philosophy & Styling
 
 - **HTML-First & Lightweight**: No external CSS frameworks, no Google Fonts, no Font Awesome icon bundles, and no JavaScript libraries, lightboxes, or theme switchers.
-- **Typography**: Uses the browser's default serif font for a raw, high-performance, and distraction-free reading experience.
+- **Typography**: Uses the Inter typeface via Google Fonts with system sans-serif fallbacks for crisp, modern legibility (18px base font size, 1.4 body line height, tighter 1.2 heading line height with scaled proportions from h1 down to h6).
 - **Layout Container**: All pages are centered within a clean `max-width: 800px; margin: 0 auto; padding: 1rem;` container, ensuring comfortable line lengths on desktop and automatic responsiveness on mobile devices.
 - **Navigation & Permanent Footer**:
   - The top navigation in `templates/base.html` provides simple pipe-separated links followed by an `<hr>`.
