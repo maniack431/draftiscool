@@ -1,21 +1,92 @@
 {% extends "base.html" %}
 
+{% block extra_head %}
+<style>
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin-top: 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+        .project-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
+
+    .project-card {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    .project-card:hover {
+        text-decoration: none;
+    }
+
+    .project-card img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        display: block;
+    }
+
+    .project-card .project-title {
+        text-align: left;
+        font-weight: bold;
+        margin-top: 8px;
+        margin-bottom: 0;
+        color: inherit;
+    }
+
+    .project-card:hover .project-title {
+        text-decoration: underline;
+    }
+</style>
+{% endblock extra_head %}
+
 {% block content %}
 
 <h1>Experiments</h1>
 
-<ol>
-    <li><a href="{{ get_url(path='@/shaan/_index.md') }}">Identity for KVIC's Shaan (11-26)</a></li>
-    <li><a href="{{ get_url(path='@/joint/_index.md') }}">Joint (05-26)</a></li>
-    <li><a href="{{ get_url(path='@/humane_enough/_index.md') }}">Humane Enough (05-25)</a></li>
-    <li><a href="{{ get_url(path='@/playstruct/_index.md') }}">Playstruct Jr. (03-26)</a></li>
-    <li><a href="{{ get_url(path='@/module01/_index.md') }}">Module 01 (12-25)</a></li>
-    <li><del>Piece Of The World (01-26)</del> — coming soon</li>
-    <li><del>Identity (01-26)</del> — coming soon</li>
-    <li><del>Pack 01 (01-26)</del> — coming soon</li>
-    <li><del>Controlled Serendipity (01-26)</del> — coming soon</li>
-    <li><del>Brand Subversion (01-26)</del> — coming soon</li>
-    <li><del>Annie's First Piano Lesson (01-26)</del> — coming soon</li>
-</ol>
+<div class="project-grid">
+    <a class="project-card" href="{{ get_url(path='@/shaan/_index.md') }}">
+        <img src="/img/shaan/01.jpg" alt="Identity for KVIC's Shaan (11-26)">
+        <p class="project-title">Identity for KVIC's Shaan (11-26)</p>
+    </a>
+
+    <a class="project-card" href="{{ get_url(path='@/joint/_index.md') }}">
+        <img src="/img/joint/pilot2.jpg" alt="Joint (05-26)">
+        <p class="project-title">Joint (05-26)</p>
+    </a>
+
+    <a class="project-card" href="{{ get_url(path='@/humane_enough/_index.md') }}">
+        <img src="/img/thumbnail/humaneenough.jpg" alt="Humane Enough (05-25)">
+        <p class="project-title">Humane Enough (05-25)</p>
+    </a>
+
+    <a class="project-card" href="{{ get_url(path='@/playstruct/_index.md') }}">
+        <img src="/img/playstruct/b1.jpg" alt="Playstruct Jr. (03-26)">
+        <p class="project-title">Playstruct Jr. (03-26)</p>
+    </a>
+
+    <a class="project-card" href="{{ get_url(path='@/module01/_index.md') }}">
+        <img src="/img/thumbnail/module01.jpg" alt="Module 01 (12-25)">
+        <p class="project-title">Module 01 (12-25)</p>
+    </a>
+</div>
+
+<div style="margin-top: 2.5rem;">
+    <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+        <li><del>Piece Of The World (01-26)</del> — coming soon</li>
+        <li><del>Identity (01-26)</del> — coming soon</li>
+        <li><del>Pack 01 (01-26)</del> — coming soon</li>
+        <li><del>Controlled Serendipity (01-26)</del> — coming soon</li>
+        <li><del>Brand Subversion (01-26)</del> — coming soon</li>
+        <li><del>Annie's First Piano Lesson (01-26)</del> — coming soon</li>
+    </ul>
+</div>
 
 {% endblock content %}
